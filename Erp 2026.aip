@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.8" version="22.8" Modules="simple" RootPath="." Language="en_GB" Id="{FBC77233-E00F-4FA1-91C4-A0600DDFECD6}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_APP_FILE" Value="[#AccountrixFlow.exe]"/>
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="AccountrixFlowIcon.exe" Type="8"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="AccountrixFlow.pk"/>
+    <ROW Property="ProductCode" Value="2057:{B769225C-136F-4B71-8ED1-AC25F0B13BEA} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Erp 2026"/>
+    <ROW Property="ProductVersion" Value="1.5.0.8" Options="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{73FBD286-545B-4C1A-9475-0DFCC3F3C27A}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="AnyCPU_Debug:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="AnyCPU_Debug:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="AnyCPU_Debug:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="AnyCPU_Debug:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="AnyCPU_Debug:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="AnyCPU_Debug:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="AnyCPU_Debug:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="AnyCPU_Debug:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="AnyCPU_Debug:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="AnyCPU_Debug:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="AccountsReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="ACCOUN~1|AccountsReports" DirectoryOptions="3"/>
+    <ROW Directory="ActivityReports_Dir" Directory_Parent="AccountsReports_Dir" DefaultDir="ACTIVI~1|ActivityReports" DirectoryOptions="3"/>
+    <ROW Directory="AkmalTradersBahawalNagar_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="AKMALT~1|Akmal Traders BahawalNagar" DirectoryOptions="3"/>
+    <ROW Directory="AllSalesReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="ALLSAL~1|AllSalesReports" DirectoryOptions="3"/>
+    <ROW Directory="ArshTraders_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="ARSHTR~1|Arsh Traders" DirectoryOptions="3"/>
+    <ROW Directory="BillsReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="BILLSR~1|BillsReports" DirectoryOptions="3"/>
+    <ROW Directory="BinSadiqUmrah_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="BINSAD~1|Bin Sadiq Umrah" DirectoryOptions="3"/>
+    <ROW Directory="ButtGGS_Dir" Directory_Parent="SaleBillsExtra_Dir" DefaultDir="BUTTGG~1|Butt G GS" DirectoryOptions="3"/>
+    <ROW Directory="CashFlow_Dir" Directory_Parent="AccountsReports_Dir" DefaultDir="CashFlow" DirectoryOptions="3"/>
+    <ROW Directory="ClaimReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="CLAIMR~1|ClaimReports" DirectoryOptions="3"/>
+    <ROW Directory="DeletedReports_Dir" Directory_Parent="BillsReports_Dir" DefaultDir="DELETE~1|DeletedReports" DirectoryOptions="3"/>
+    <ROW Directory="DeliveryOrderDispatchReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="DELIVE~1|DeliveryOrderDispatchReports" DirectoryOptions="3"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Epson_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="Epson" DirectoryOptions="3"/>
+    <ROW Directory="ExtraStyle_Dir" Directory_Parent="Sale_Dir" DefaultDir="EXTRAS~1|Extra Style" DirectoryOptions="3"/>
+    <ROW Directory="Extra_2_Dir" Directory_Parent="ProfitLoseReports_Dir" DefaultDir="Extra" DirectoryOptions="3"/>
+    <ROW Directory="Extra_Dir" Directory_Parent="SaleInvoiceA5_Dir" DefaultDir="Extra" DirectoryOptions="3"/>
+    <ROW Directory="FastPackages_Dir" Directory_Parent="Extra_Dir" DefaultDir="FASTPA~1|Fast Packages" DirectoryOptions="3"/>
+    <ROW Directory="Forecast_Dir" Directory_Parent="Reports_Dir" DefaultDir="Forecast" DirectoryOptions="3"/>
+    <ROW Directory="GodownsReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="GODOWN~1|GodownsReports" DirectoryOptions="3"/>
+    <ROW Directory="ItemsProfile_Dir" Directory_Parent="Reports_Dir" DefaultDir="ITEMSP~1|ItemsProfile" DirectoryOptions="3"/>
+    <ROW Directory="Landscape_Dir" Directory_Parent="SaleInvoiceA5_Dir" DefaultDir="LANDSC~1|Landscape" DirectoryOptions="3"/>
+    <ROW Directory="LeadgerReports_Dir" Directory_Parent="AccountsReports_Dir" DefaultDir="LEADGE~1|LeadgerReports" DirectoryOptions="3"/>
+    <ROW Directory="MasterAccoutsProfiles_Dir" Directory_Parent="Reports_Dir" DefaultDir="MASTER~1|MasterAccoutsProfiles" DirectoryOptions="3"/>
+    <ROW Directory="ModernAuto_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="MODERN~1|Modern Auto" DirectoryOptions="3"/>
+    <ROW Directory="MovementReport_Dir" Directory_Parent="StockReports_Dir" DefaultDir="MOVEME~1|Movement Report" DirectoryOptions="3"/>
+    <ROW Directory="PrintVoucher_Dir" Directory_Parent="Reports_Dir" DefaultDir="PRINTV~1|PrintVoucher" DirectoryOptions="3"/>
+    <ROW Directory="ProcessControlReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="PROCES~1|ProcessControlReports" DirectoryOptions="3"/>
+    <ROW Directory="ProductionAndRMCReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="PRODUC~1|ProductionAndRMCReports" DirectoryOptions="3"/>
+    <ROW Directory="ProfitLoseReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="PROFIT~1|ProfitLoseReports" DirectoryOptions="3"/>
+    <ROW Directory="Purcchase_Dir" Directory_Parent="AllSalesReports_Dir" DefaultDir="PURCCH~1|Purcchase" DirectoryOptions="3"/>
+    <ROW Directory="Purchase_Dir" Directory_Parent="BillsReports_Dir" DefaultDir="Purchase" DirectoryOptions="3"/>
+    <ROW Directory="QrCodeReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="QRCODE~1|QrCodeReports" DirectoryOptions="3"/>
+    <ROW Directory="QtyWithValue_Dir" Directory_Parent="STReports_Dir" DefaultDir="QTYWIT~1|QtyWithValue" DirectoryOptions="3"/>
+    <ROW Directory="Qty_Dir" Directory_Parent="STReports_Dir" DefaultDir="Qty" DirectoryOptions="3"/>
+    <ROW Directory="RecoveryReports_Dir" Directory_Parent="AccountsReports_Dir" DefaultDir="RECOVE~1|RecoveryReports" DirectoryOptions="3"/>
+    <ROW Directory="Regular_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="Regular" DirectoryOptions="3"/>
+    <ROW Directory="Reports_Dir" Directory_Parent="APPDIR" DefaultDir="Reports" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="STReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="STREPO~1|STReports" DirectoryOptions="3"/>
+    <ROW Directory="SaleBillsExtra_Dir" Directory_Parent="BillsReports_Dir" DefaultDir="SALEBI~1|SaleBillsExtra" DirectoryOptions="3"/>
+    <ROW Directory="SaleInvoiceA5_Dir" Directory_Parent="Sale_Dir" DefaultDir="SALEIN~1|SaleInvoiceA5" DirectoryOptions="3"/>
+    <ROW Directory="Sale_Dir" Directory_Parent="BillsReports_Dir" DefaultDir="Sale" DirectoryOptions="3"/>
+    <ROW Directory="StockAdj_Dir" Directory_Parent="Reports_Dir" DefaultDir="StockAdj" DirectoryOptions="3"/>
+    <ROW Directory="StockReports_Dir" Directory_Parent="Reports_Dir" DefaultDir="STOCKR~1|StockReports" DirectoryOptions="3"/>
+    <ROW Directory="StyleRegualr_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="STYLER~1|Style Regualr" DirectoryOptions="3"/>
+    <ROW Directory="StyleWithUrdu_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="STYLEW~1|Style With Urdu" DirectoryOptions="3"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Umer_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="Umer" DirectoryOptions="3"/>
+    <ROW Directory="Wastage_Dir" Directory_Parent="BillsReports_Dir" DefaultDir="Wastage" DirectoryOptions="3"/>
+    <ROW Directory="autoParts_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="AUTOPA~1|autoParts" DirectoryOptions="3"/>
+    <ROW Directory="babystore_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="BABYST~1|baby store" DirectoryOptions="3"/>
+    <ROW Directory="beforeZha_Dir" Directory_Parent="ExtraStyle_Dir" DefaultDir="BEFORE~1|before Zha" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{582D1776-FFCE-4C00-91E2-E51B86303BB2}"/>
+    <ROW Component="ProductInformation" Value="{67098D12-CC8C-4477-A06D-5E4DF5B842F3}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{582D1776-FFCE-4C00-91E2-E51B86303BB2}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AccountrixFlow.exe" ComponentId="{1F582AEF-AE6A-4F17-B25A-E589005AFE0D}" Directory_="APPDIR" Attributes="0" KeyPath="AccountrixFlow.exe"/>
+    <ROW Component="AshTBox.dll" ComponentId="{871EFF69-B418-4B9F-9754-AB6F401B0B20}" Directory_="APPDIR" Attributes="0" KeyPath="AshTBox.dll"/>
+    <ROW Component="AshUsercontrol.dll" ComponentId="{B03840AC-C03B-42F1-91F8-84AAA10FFC7E}" Directory_="APPDIR" Attributes="0" KeyPath="AshUsercontrol.dll"/>
+    <ROW Component="AxShockwaveFlashObjects.dll" ComponentId="{B0932C70-4CA2-4B17-AF1C-8D54606646E8}" Directory_="APPDIR" Attributes="0" KeyPath="AxShockwaveFlashObjects.dll"/>
+    <ROW Component="CRVsPackageLib.dll" ComponentId="{2E9DEDD1-7AD9-4A12-A09E-4DF497DDC192}" Directory_="APPDIR" Attributes="0" KeyPath="CRVsPackageLib.dll"/>
+    <ROW Component="ClaimReport.cs" ComponentId="{D1850F96-B5A1-4EA8-9988-D8C31D115C6E}" Directory_="ClaimReports_Dir" Attributes="0" KeyPath="ClaimReport.rpt" Type="0"/>
+    <ROW Component="CrystalDecisions.CrystalReports.Design.dll" ComponentId="{371431AD-AA3F-402A-B22A-CB6094AC3B16}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.CrystalReports.Design.dll"/>
+    <ROW Component="CrystalDecisions.CrystalReports.Engine.dll" ComponentId="{26E100B1-92BE-481E-A025-C5843EB9F504}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.CrystalReports.Engine.dll"/>
+    <ROW Component="CrystalDecisions.CrystalReports.TemplateEngine.dll" ComponentId="{D116AD0F-5896-4289-B5B1-9DC4A3495596}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.CrystalReports.TemplateEngine.dll"/>
+    <ROW Component="CrystalDecisions.Data.AdoDotNetInterop.dll" ComponentId="{CA9B4973-8A6C-4F2B-9F5D-1A1A6025D7CA}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.Data.AdoDotNetInterop.dll"/>
+    <ROW Component="CrystalDecisions.Enterprise.Viewing.ReportSource.dll" ComponentId="{CADBE808-3BAA-420C-B301-48A0BEEA3FC6}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.Enterprise.Viewing.ReportSource.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.C_1_ommonObjectModel.dll" ComponentId="{F760DE44-1D96-440D-ABA4-A39BFAF28BCA}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.CommonObjectModel.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.ClientDoc.dll" ComponentId="{A69C90A9-D5BD-4622-B6BF-4BB189919A7B}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.ClientDoc.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.CommLayer.dll" ComponentId="{45BB4380-0520-497F-89C8-B814BD6F51CB}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.CommLayer.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.CommonControls.dll" ComponentId="{A53C18D3-0792-403C-853B-6D8A41752B67}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.CommonControls.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.Controllers.dll" ComponentId="{B076A267-1F65-4AD0-8569-33CF967ED68B}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.Controllers.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.CubeDefModel.dll" ComponentId="{8F99AA03-BAF1-48FC-B94A-C49227BC99EF}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.CubeDefModel.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.DataDefModel.dll" ComponentId="{17519F10-237B-4AF6-8DE2-966483504D92}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.DataDefModel.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.DataSetConversion.dll" ComponentId="{3992B196-955C-490F-BA50-04C96B85A8DA}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.DataSetConversion.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.ObjectFactory.dll" ComponentId="{EEB4B421-D17A-4E39-801F-8FA3F133596A}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.ObjectFactory.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.Prompting.dll" ComponentId="{8D6DA8D3-5EC0-4C9D-94DC-AD3EB07EA1F4}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.Prompting.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.ReportDefModel.dll" ComponentId="{9E5E52E6-629A-4C3B-9DE7-E986B039519A}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.ReportDefModel.dll"/>
+    <ROW Component="CrystalDecisions.ReportAppServer.XmlSerialize.dll" ComponentId="{93F08AA8-ACAE-486A-A4E0-37B953D08222}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportAppServer.XmlSerialize.dll"/>
+    <ROW Component="CrystalDecisions.ReportSource.dll" ComponentId="{59727668-F09E-4C5B-86B8-BE97CD4E3A61}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.ReportSource.dll"/>
+    <ROW Component="CrystalDecisions.Shared.dll" ComponentId="{FCCD0A20-4A00-4714-AC13-092FEB8E5D4B}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.Shared.dll"/>
+    <ROW Component="CrystalDecisions.VSDesigner.dll" ComponentId="{4BC24FAD-71AC-4800-88C8-685CF331B050}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.VSDesigner.dll"/>
+    <ROW Component="CrystalDecisions.Web.dll" ComponentId="{8F8F6362-4066-4C78-BF80-F9B7084A78C2}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.Web.dll"/>
+    <ROW Component="CrystalDecisions.Windows.Forms.dll" ComponentId="{8A26F3ED-785E-4CD9-BEDC-6B4CE0D66EEC}" Directory_="APPDIR" Attributes="0" KeyPath="CrystalDecisions.Windows.Forms.dll"/>
+    <ROW Component="EntityFramework.SqlServer.dll" ComponentId="{8595BBC1-4F6F-4E7C-893E-1FBAC910D4AA}" Directory_="APPDIR" Attributes="0" KeyPath="EntityFramework.SqlServer.dll"/>
+    <ROW Component="EntityFramework.dll" ComponentId="{12EFCA63-9EDC-481E-A765-EA3F4F28C84B}" Directory_="APPDIR" Attributes="0" KeyPath="EntityFramework.dll"/>
+    <ROW Component="EnvDTE.dll" ComponentId="{79F50E45-CD81-4E39-8F56-8E0BC0976D23}" Directory_="APPDIR" Attributes="0" KeyPath="EnvDTE.dll"/>
+    <ROW Component="EnvDTE80.dll" ComponentId="{706D374C-95B2-4464-BC51-6EA7A8BE8664}" Directory_="APPDIR" Attributes="0" KeyPath="EnvDTE80.dll"/>
+    <ROW Component="ExcelDataReader.DataSet.dll" ComponentId="{4075F668-D2E5-44A5-8147-548A42F5BC84}" Directory_="APPDIR" Attributes="0" KeyPath="ExcelDataReader.DataSet.dll"/>
+    <ROW Component="ExcelDataReader.dll" ComponentId="{C2ABAF16-DF1D-42BF-B26C-409FB1A58BFD}" Directory_="APPDIR" Attributes="0" KeyPath="ExcelDataReader.dll"/>
+    <ROW Component="ForecastDetail.cs" ComponentId="{C9D483CF-F9EE-4D50-B581-8B0FF7D0EFF5}" Directory_="Forecast_Dir" Attributes="0" KeyPath="ForecastDetail.rpt" Type="0"/>
+    <ROW Component="GodownStockTransferBill.cs" ComponentId="{DA48C43F-0A77-4029-896D-C472EA802AA0}" Directory_="GodownsReports_Dir" Attributes="0" KeyPath="GodownStockTransferBill.rpt" Type="0"/>
+    <ROW Component="Microsoft.CSharp.dll" ComponentId="{7E9D03A2-AD75-45CF-BF93-4F77537D320E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.CSharp.dll"/>
+    <ROW Component="Microsoft.VisualStudio.OLE.Interop.dll" ComponentId="{39779F3B-2D06-413C-B2D3-3DDB9D9DEA16}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.OLE.Interop.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Shell.Interop.dll" ComponentId="{17594E04-61A9-4741-99BF-9EBC786C5769}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.dll"/>
+    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.dll" ComponentId="{36F3CEA5-DD0C-4C72-A14C-205081BC443F}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{2B7E2836-8333-48BD-B8BB-DC47C814A05E}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="PdfSharpgdi.dll" ComponentId="{3D72F2BD-2355-41F7-AD40-FE23C0679350}" Directory_="APPDIR" Attributes="0" KeyPath="PdfSharpgdi.dll"/>
+    <ROW Component="PdfiumViewer.dll" ComponentId="{FE09E7E9-3C69-4002-BDA1-DBAA2E5B1144}" Directory_="APPDIR" Attributes="0" KeyPath="PdfiumViewer.dll"/>
+    <ROW Component="PresentationCore.dll" ComponentId="{6BD3E42C-F73F-4F64-8B4B-8AB6D516567A}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationCore.dll"/>
+    <ROW Component="PresentationFramework.dll" ComponentId="{7AE6FBC2-1E7D-455F-BD2E-EB952C64F4CC}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationFramework.dll"/>
+    <ROW Component="ProcessControlDetailReport.cs" ComponentId="{684B382C-B40F-4832-8941-E993208E2087}" Directory_="ProcessControlReports_Dir" Attributes="0" KeyPath="ProcessControlDetailReport.rpt" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{67098D12-CC8C-4477-A06D-5E4DF5B842F3}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="QRCoder.dll" ComponentId="{89DB55EB-8241-4881-9E2D-7A5117E22589}" Directory_="APPDIR" Attributes="0" KeyPath="QRCoder.dll"/>
+    <ROW Component="QuestPDF.dll" ComponentId="{D34CBB08-31E4-4C9D-A858-AB17509D5A52}" Directory_="APPDIR" Attributes="0" KeyPath="QuestPDF.dll"/>
+    <ROW Component="QuestPdfSkia.dll" ComponentId="{72252CB3-0576-4549-9804-6E511B273A74}" Directory_="APPDIR" Attributes="256" KeyPath="QuestPdfSkia.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{93D3BA38-5BC9-4C9A-B037-187D396935B0}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="ShockwaveFlashObjects.dll" ComponentId="{3F0ABD84-59F2-49B0-A823-71E4146DFA2A}" Directory_="APPDIR" Attributes="0" KeyPath="ShockwaveFlashObjects.dll"/>
+    <ROW Component="SpellNumber.dll" ComponentId="{4C2814D0-D4BA-430C-B4C5-F37ED64E0B92}" Directory_="APPDIR" Attributes="0" KeyPath="SpellNumber.dll"/>
+    <ROW Component="System.ComponentModel.DataAnnotations.dll" ComponentId="{5482AD8E-14D4-446C-ADD2-144C0D1A6F21}" Directory_="APPDIR" Attributes="0" KeyPath="System.ComponentModel.DataAnnotations.dll"/>
+    <ROW Component="System.Configuration.dll" ComponentId="{52AB333B-258E-4116-AAA0-4F405BDF622D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Configuration.dll"/>
+    <ROW Component="System.Core.dll" ComponentId="{9B66BB57-9DFF-4558-880C-B552284D9BF7}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{0EC7424B-D543-40CC-9F78-BEB248C86B31}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{95587937-A856-41FF-BC3D-E820933B0F83}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Deployment.dll" ComponentId="{DEBCCD9F-1409-4C85-A445-DC4EE3AF87EF}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
+    <ROW Component="System.Design.dll" ComponentId="{209870BB-4F75-423D-977C-B431344D9813}" Directory_="APPDIR" Attributes="0" KeyPath="System.Design.dll"/>
+    <ROW Component="System.Device.dll" ComponentId="{616E0183-5042-403C-AF71-CCC761CD1690}" Directory_="APPDIR" Attributes="0" KeyPath="System.Device.dll"/>
+    <ROW Component="System.DirectoryServices.dll" ComponentId="{8214CCBB-B5D2-491A-851D-FE7418E30351}" Directory_="APPDIR" Attributes="0" KeyPath="System.DirectoryServices.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{36647CFD-03E1-4334-BD17-64EC3D3F986D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.IO.Compression.dll" ComponentId="{F7FF82F1-7C94-4503-A513-9CD84031EDA2}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.Compression.dll"/>
+    <ROW Component="System.Management.dll" ComponentId="{B1DEA16D-DD54-4F85-AC57-96B3552EC745}" Directory_="APPDIR" Attributes="0" KeyPath="System.Management.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{521581A0-0E6E-4C44-BAB4-2B80C300A3D9}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{EF66BC61-84DF-482B-ADAB-0000EE4FE1B3}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Numerics.dll" ComponentId="{1CF00815-EF08-4ADC-BC5E-BA71D04B3A81}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.dll"/>
+    <ROW Component="System.Runtime.Serialization.Formatters.Soap.dll" ComponentId="{4DE77592-B248-4E43-98D0-CDCFC92DCC63}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.Serialization.Formatters.Soap.dll"/>
+    <ROW Component="System.Runtime.Serialization.dll" ComponentId="{31CA3040-B87D-41C5-A861-67EDBB7F988B}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.Serialization.dll"/>
+    <ROW Component="System.Security.dll" ComponentId="{502D95D0-EF30-47C7-A702-2EB35FEEB81C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.dll"/>
+    <ROW Component="System.Transactions.dll" ComponentId="{0BFBA488-9BAB-4125-9F74-1BA86B5B0DC4}" Directory_="APPDIR" Attributes="0" KeyPath="System.Transactions.dll"/>
+    <ROW Component="System.Web.Services.dll" ComponentId="{49463070-C3FA-4E0E-B24B-838217BB89E9}" Directory_="APPDIR" Attributes="0" KeyPath="System.Web.Services.dll"/>
+    <ROW Component="System.Web.dll" ComponentId="{30E5787A-3A85-417D-A5F7-89DB84A1FB55}" Directory_="APPDIR" Attributes="0" KeyPath="System.Web.dll"/>
+    <ROW Component="System.Windows.Forms.dll" ComponentId="{E80469DC-2F75-4FF2-96C7-18BC98408C59}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{6FD5DE6D-204B-45E8-AA51-56DA3A7127F3}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{244838BB-B927-4E10-A0BF-718A56FBA685}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{9BA2977D-351D-493E-98EE-30F634AD7E8F}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="VSLangProj.dll" ComponentId="{138640EF-47DD-42DB-A450-DCB05D9B88EC}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj.dll"/>
+    <ROW Component="VsWebSite.Interop.dll" ComponentId="{BA16829E-5BCA-435A-8B3E-F2BD8169757C}" Directory_="APPDIR" Attributes="0" KeyPath="VsWebSite.Interop.dll"/>
+    <ROW Component="WindowsBase.dll" ComponentId="{7EB318F0-B4B5-4A6D-8DBC-BAFFF61BC809}" Directory_="APPDIR" Attributes="0" KeyPath="WindowsBase.dll"/>
+    <ROW Component="Zen.Barcode.Core.dll" ComponentId="{C8E88326-6426-4945-AC37-53B0A5FE0F07}" Directory_="APPDIR" Attributes="0" KeyPath="Zen.Barcode.Core.dll"/>
+    <ROW Component="crptA5CashReciptAndPaymentsVouchers.cs" ComponentId="{8C8D0072-63A3-4348-B86E-482896FD665D}" Directory_="PrintVoucher_Dir" Attributes="0" KeyPath="crptA5CashReciptAndPaymentsVouchers.rpt" Type="0"/>
+    <ROW Component="crptA5DeletedInvoiceSlip.cs" ComponentId="{AB6C66A8-1EB1-4D0A-A2C0-B2EC4F2DABCB}" Directory_="DeletedReports_Dir" Attributes="0" KeyPath="crptA5DeletedInvoiceSlip.rpt" Type="0"/>
+    <ROW Component="crptA5DemandOrderSlip.cs" ComponentId="{FD1EA00E-ACE8-4E51-A0C7-8B5AFE389FC4}" Directory_="Purchase_Dir" Attributes="0" KeyPath="crptA5DemandOrderSlip.rpt" Type="0"/>
+    <ROW Component="crptA5GSTSaleInvoiceSlip.cs" ComponentId="{40A6195D-083C-4B6F-A90C-893C5E5168E2}" Directory_="Sale_Dir" Attributes="0" KeyPath="crptA5GSTSaleInvoiceSlip.rpt" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs" ComponentId="{3A3CDB2C-6336-4A96-92DC-350C59323466}" Directory_="AkmalTradersBahawalNagar_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_10" ComponentId="{DC20A4F0-2775-4750-9B5D-39608A3F91F7}" Directory_="ExtraStyle_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_11" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_11" ComponentId="{C0A77EB4-BE2B-4433-92CE-B75EF3A187AF}" Directory_="ModernAuto_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_12" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_12" ComponentId="{606851B7-E3B5-4879-B17B-0FDF6CE353B5}" Directory_="Regular_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_13" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_13" ComponentId="{2D3D3AB3-2745-460F-8262-7C3213FC047E}" Directory_="StyleWithUrdu_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_14" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_14" ComponentId="{4EC54CC2-F176-4307-BAAB-5465928453B2}" Directory_="ButtGGS_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_15" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_8" ComponentId="{C49B44AB-8DEC-49C8-847F-36442720AB99}" Directory_="ArshTraders_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_9" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip.cs_9" ComponentId="{F9774C2E-2E42-4B8B-BEA7-5CA29F9C5A90}" Directory_="beforeZha_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip.rpt_10" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlipDetailed.cs" ComponentId="{1645D17F-FD3D-4C62-AC4D-ABC4BA75F091}" Directory_="SaleInvoiceA5_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlipDetailed.rpt" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip_UniQty_UnitR_2_ate_Dis_DisAmt_Total.cs" ComponentId="{43B181FD-4540-4248-BE43-CD71FD4A8C45}" Directory_="Landscape_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip_UniQty_UnitR_3_ate_Dis_DisAmt_Total.rpt" Type="0"/>
+    <ROW Component="crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" ComponentId="{11FF1269-67D1-4BF2-8C2A-A3BABE717071}" Directory_="FastPackages_Dir" Attributes="0" KeyPath="crptA5SaleInvoiceSlip_UniQty_UnitR_3_ate_DisAmt_Total.rpt" Type="0"/>
+    <ROW Component="crptA5WastageBill.cs" ComponentId="{0C1B4EDA-4A57-4641-A1F6-FC1E27C35EAB}" Directory_="Wastage_Dir" Attributes="0" KeyPath="crptA5WastageBill.rpt" Type="0"/>
+    <ROW Component="crptAccountsBalanceReport.cs" ComponentId="{25599E12-F7B8-4655-BF1D-B11F097B80E7}" Directory_="AccountsReports_Dir" Attributes="0" KeyPath="crptAccountsBalanceReport.rpt" Type="0"/>
+    <ROW Component="crptActivityReport.cs" ComponentId="{E58D1589-DC10-480E-A3F9-942F4BFC6617}" Directory_="ActivityReports_Dir" Attributes="0" KeyPath="crptActivityReport.rpt" Type="0"/>
+    <ROW Component="crptActivityReport.rpt" ComponentId="{9D7ACE7F-6D5F-4B27-A806-FA53AF848D3A}" Directory_="Reports_Dir" Attributes="0" KeyPath="crptActivityReport.rpt_3" Type="0"/>
+    <ROW Component="crptBankProfiles.cs" ComponentId="{863973E7-9389-4652-AD94-853B0B2C46BB}" Directory_="MasterAccoutsProfiles_Dir" Attributes="0" KeyPath="crptBankProfiles.rpt" Type="0"/>
+    <ROW Component="crptCashFlow.cs" ComponentId="{E61A3326-F95A-4792-ABC2-A43B1422E32C}" Directory_="CashFlow_Dir" Attributes="0" KeyPath="crptCashFlow.rpt" Type="0"/>
+    <ROW Component="crptCatagoryWiseSalesReportsLikeItems.cs" ComponentId="{51A4F3CE-DA95-40AF-9F7C-AF49B1ABC736}" Directory_="AllSalesReports_Dir" Attributes="0" KeyPath="crptCatagoryWiseSalesReportsLikeItems.rpt" Type="0"/>
+    <ROW Component="crptCompanyCategoryGodownWise.cs" ComponentId="{0096950C-4251-4B7E-888F-1C57D86440E1}" Directory_="MovementReport_Dir" Attributes="0" KeyPath="crptGodownandLineitemWise.rpt" Type="0"/>
+    <ROW Component="crptCustomerRecoveryReport1.cs" ComponentId="{33CB16B3-A878-4801-ABD1-B543020A5E91}" Directory_="RecoveryReports_Dir" Attributes="0" KeyPath="crptCustomerRecoveryReport1.rpt" Type="0"/>
+    <ROW Component="crptDOReportDispatchItems.cs" ComponentId="{236216BF-2213-4952-A7C1-22AB6ABF5006}" Directory_="DeliveryOrderDispatchReports_Dir" Attributes="0" KeyPath="crptDOReportDispatchItems.rpt" Type="0"/>
+    <ROW Component="crptFinishedIemsRecipe.cs" ComponentId="{71A7A467-3281-4C31-B217-E135C2F0F7F0}" Directory_="APPDIR" Attributes="0" KeyPath="AccountrixFlow.exe.config" Type="0"/>
+    <ROW Component="crptFinishedIemsRecipe.cs_2" ComponentId="{A5E9E169-3B1E-4D06-8CC1-2BF1306C9266}" Directory_="ItemsProfile_Dir" Attributes="0" KeyPath="crptFinishedIemsRecipe.rpt" Type="0"/>
+    <ROW Component="crptGodownLineItemCompanyAndCategoryWise.cs" ComponentId="{7FE15A10-E124-40EA-9000-2C3B5FF1725D}" Directory_="StockReports_Dir" Attributes="0" KeyPath="crptGodownLineItemCompanyAndCategoryWise.rpt" Type="0"/>
+    <ROW Component="crptGodownLineItemCompanyCatagoryW_2_ise.cs" ComponentId="{B5527843-B4D9-43DC-B357-41B6E40EBCAD}" Directory_="QtyWithValue_Dir" Attributes="0" KeyPath="crptGodownLineItemCompanyCatagoryW_3_ise.rpt" Type="0"/>
+    <ROW Component="crptGodownLineItemCompanyCatagoryWise.cs" ComponentId="{A145802B-33ED-48E2-AC77-EAF62DFCB076}" Directory_="Qty_Dir" Attributes="0" KeyPath="crptGodownLineItemCompanyCatagoryWise.rpt" Type="0"/>
+    <ROW Component="crptGodownWisePurchaseReportLikeItems.cs" ComponentId="{935A8B58-F977-4112-8AA2-2115527E64C4}" Directory_="Purcchase_Dir" Attributes="0" KeyPath="crptGodownWisePurchaseReportLikeItems.rpt" Type="0"/>
+    <ROW Component="crptItemAndPartyWiseSalesReports.cs" ComponentId="{FE6AD6BF-AEDF-408B-BAC1-1AEA7F210765}" Directory_="Extra_2_Dir" Attributes="0" KeyPath="crptItemAndPartyWiseSalesReports.rpt_3" Type="0"/>
+    <ROW Component="crptLedgerReport.cs" ComponentId="{FA008004-CE60-43B6-9E8A-172981444763}" Directory_="LeadgerReports_Dir" Attributes="0" KeyPath="crptLedgerReport.rpt" Type="0"/>
+    <ROW Component="crptLikeInvoices1.cs" ComponentId="{ABFD3F2F-2623-464C-AFFD-DA611691AAD7}" Directory_="StockAdj_Dir" Attributes="0" KeyPath="crptLikeInvoices1.rpt" Type="0"/>
+    <ROW Component="crptPLCatagoryWiseSalesLikeItems.cs" ComponentId="{ED1C1659-0F65-41C1-960F-DD0B1D9E60E0}" Directory_="ProfitLoseReports_Dir" Attributes="0" KeyPath="crptPLCatagoryWiseSalesLikeItems.rpt" Type="0"/>
+    <ROW Component="crptProductionLikeBatchNoWise.cs" ComponentId="{01A2189E-1825-46A2-BB41-40D5D31A3481}" Directory_="ProductionAndRMCReports_Dir" Attributes="0" KeyPath="crptProductionLikeBatchNoWise.rpt" Type="0"/>
+    <ROW Component="crptThermalSaleInvoiceSlip.cs" ComponentId="{D466FD6E-F148-4FD1-B185-BBD3ECE13138}" Directory_="autoParts_Dir" Attributes="0" KeyPath="crptThermalSaleInvoiceSlip.rpt_14" Type="0"/>
+    <ROW Component="crptThermalSaleInvoiceSlip.cs_10" ComponentId="{735CE6D2-7B54-42E5-9624-7A93D32F56FC}" Directory_="Umer_Dir" Attributes="0" KeyPath="crptThermalSaleInvoiceSlip.rpt_22" Type="0"/>
+    <ROW Component="crptThermalSaleInvoiceSlip.cs_6" ComponentId="{F6591E5D-578E-428D-84BA-48E36A1CB175}" Directory_="babystore_Dir" Attributes="0" KeyPath="crptThermalSaleInvoiceSlip.rpt_15" Type="0"/>
+    <ROW Component="crptThermalSaleInvoiceSlip.cs_7" ComponentId="{6484EA5E-1992-4F51-9F71-5DA24F16EF9F}" Directory_="BinSadiqUmrah_Dir" Attributes="0" KeyPath="crptThermalSaleInvoiceSlip.rpt_16" Type="0"/>
+    <ROW Component="crptThermalSaleInvoiceSlip.cs_8" ComponentId="{07C50578-7646-4ABC-A58F-E7FDAF809B82}" Directory_="Epson_Dir" Attributes="0" KeyPath="crptThermalSaleInvoiceSlip.rpt_17" Type="0"/>
+    <ROW Component="crptThermalSaleInvoiceSlip.cs_9" ComponentId="{C0964979-9277-4800-95E4-7AEB558FEE98}" Directory_="StyleRegualr_Dir" Attributes="0" KeyPath="crptThermalSaleInvoiceSlip.rpt_20" Type="0"/>
+    <ROW Component="libgcc_s_dw21.dll" ComponentId="{4D92AB14-B499-4D58-A612-05B1C67A1F0E}" Directory_="APPDIR" Attributes="0" KeyPath="libgcc_s_dw21.dll"/>
+    <ROW Component="libgcc_s_seh1.dll" ComponentId="{75E20B53-7B96-4857-8CFC-759447AB2A3E}" Directory_="APPDIR" Attributes="256" KeyPath="libgcc_s_seh1.dll"/>
+    <ROW Component="libstdc6.dll" ComponentId="{1DBA78BD-856D-45EA-BD37-08ABC0EB7359}" Directory_="APPDIR" Attributes="0" KeyPath="libstdc6.dll"/>
+    <ROW Component="libwinpthread1.dll" ComponentId="{1F2DE5F4-97A8-4404-A772-2D3809961F37}" Directory_="APPDIR" Attributes="256" KeyPath="libwinpthread1.dll"/>
+    <ROW Component="log4net.dll" ComponentId="{29FB5CD5-489E-4C5C-BDD1-8A79DAE38815}" Directory_="APPDIR" Attributes="256" KeyPath="log4net.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{EB474D92-46FC-46D0-A36D-72962FA67357}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="netstandard.dll" ComponentId="{0E31086E-2918-4E5F-B797-87FCD376C477}" Directory_="APPDIR" Attributes="0" KeyPath="netstandard.dll"/>
+    <ROW Component="pdfium.dll" ComponentId="{53553B63-0642-4EA0-817C-D4F0D2EE5DAB}" Directory_="APPDIR" Attributes="0" KeyPath="pdfium.dll"/>
+    <ROW Component="qpdf.dll" ComponentId="{E314851E-B319-4116-9F7A-448202C24E93}" Directory_="APPDIR" Attributes="0" KeyPath="qpdf.dll"/>
+    <ROW Component="stdole.dll" ComponentId="{DFD8C77D-7812-4F29-8C73-6BAF4A6AF7BA}" Directory_="APPDIR" Attributes="0" KeyPath="stdole.dll"/>
+    <ROW Component="x25mm.cs" ComponentId="{5E076B0A-0233-4D92-82E5-5E35231BFC2D}" Directory_="QrCodeReports_Dir" Attributes="0" KeyPath="x25mm.rpt" Type="0"/>
+    <ROW Component="zlib1.dll" ComponentId="{59908488-FD81-4920-8C0B-E020D55E6B1F}" Directory_="APPDIR" Attributes="256" KeyPath="zlib1.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~1.DLL|System.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" SelfReg="false"/>
+    <ROW File="AshUsercontrol.dll" Component_="AshUsercontrol.dll" FileName="ASHUSE~1.DLL|AshUsercontrol.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\AshTBox\Debug\AshUsercontrol.dll" SelfReg="false"/>
+    <ROW File="VsWebSite.Interop.dll" Component_="VsWebSite.Interop.dll" FileName="VSWEBS~1.DLL|VsWebSite.Interop.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\VsWebSite.Interop.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.dll" Component_="System.Runtime.Serialization.dll" FileName="SYSTEM~2.DLL|System.Runtime.Serialization.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Runtime.Serialization.dll" SelfReg="false"/>
+    <ROW File="System.Data.DataSetExtensions.dll" Component_="System.Data.DataSetExtensions.dll" FileName="SYSTEM~3.DLL|System.Data.DataSetExtensions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll" SelfReg="false"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" SelfReg="false"/>
+    <ROW File="netstandard.dll" Component_="netstandard.dll" FileName="NETSTA~1.DLL|netstandard.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\netstandard.dll" SelfReg="false"/>
+    <ROW File="AshTBox.dll" Component_="AshTBox.dll" FileName="AshTBox.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\AshTBox\Debug\AshTBox.dll" SelfReg="false"/>
+    <ROW File="qpdf.dll" Component_="qpdf.dll" FileName="qpdf.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x64\native\qpdf.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.ReportDefModel.dll" Component_="CrystalDecisions.ReportAppServer.ReportDefModel.dll" FileName="CRYSTA~1.DLL|CrystalDecisions.ReportAppServer.ReportDefModel.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.ReportDefModel.dll" SelfReg="false"/>
+    <ROW File="Microsoft.CSharp.dll" Component_="Microsoft.CSharp.dll" FileName="MICROS~1.DLL|Microsoft.CSharp.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Microsoft.CSharp.dll" SelfReg="false"/>
+    <ROW File="PresentationCore.dll" Component_="PresentationCore.dll" FileName="PRESEN~1.DLL|PresentationCore.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\PresentationCore.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.Web.dll" Component_="CrystalDecisions.Web.dll" FileName="CRYSTA~2.DLL|CrystalDecisions.Web.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Web.dll" SelfReg="false"/>
+    <ROW File="AccountrixFlow.exe.config" Component_="crptFinishedIemsRecipe.cs" FileName="ACCOUN~1.CON|AccountrixFlow.exe.config" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\AccountrixFlow.exe.config" SelfReg="false"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~4.DLL|System.Data.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll" SelfReg="false"/>
+    <ROW File="SpellNumber.dll" Component_="SpellNumber.dll" FileName="SPELLN~1.DLL|SpellNumber.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\AshTBox\Debug\SpellNumber.dll" SelfReg="false"/>
+    <ROW File="EntityFramework.dll" Component_="EntityFramework.dll" FileName="ENTITY~1.DLL|EntityFramework.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll" SelfReg="false"/>
+    <ROW File="AshUsercontrol.pdb" Component_="AshUsercontrol.dll" FileName="ASHUSE~1.PDB|AshUsercontrol.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\AshTBox\AshTBox\obj\Debug\AshUsercontrol.pdb" SelfReg="false"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.Prompting.dll" Component_="CrystalDecisions.ReportAppServer.Prompting.dll" FileName="CRYSTA~3.DLL|CrystalDecisions.ReportAppServer.Prompting.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.Prompting.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="SYSTEM~5.DLL|System.Drawing.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.dll" SelfReg="false"/>
+    <ROW File="System.Windows.Forms.dll" Component_="System.Windows.Forms.dll" FileName="SYSTEM~6.DLL|System.Windows.Forms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="libqpdf.so" Component_="crptFinishedIemsRecipe.cs" FileName="libqpdf.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\linux-x64\native\libqpdf.so" SelfReg="false"/>
+    <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="SYSTEM~7.DLL|System.Xml.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.CommonControls.dll" Component_="CrystalDecisions.ReportAppServer.CommonControls.dll" FileName="CRYSTA~4.DLL|CrystalDecisions.ReportAppServer.CommonControls.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.CommonControls.dll" SelfReg="false"/>
+    <ROW File="System.Xml.Linq.dll" Component_="System.Xml.Linq.dll" FileName="SYSTEM~8.DLL|System.Xml.Linq.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.dll" SelfReg="false"/>
+    <ROW File="AccountrixFlow.exe" Component_="AccountrixFlow.exe" FileName="ACCOUN~1.EXE|AccountrixFlow.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\AccountrixFlow.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="AxShockwaveFlashObjects.dll" Component_="AxShockwaveFlashObjects.dll" FileName="AXSHOC~1.DLL|AxShockwaveFlashObjects.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\AxShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.CommLayer.dll" Component_="CrystalDecisions.ReportAppServer.CommLayer.dll" FileName="CRYSTA~5.DLL|CrystalDecisions.ReportAppServer.CommLayer.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.CommLayer.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.CrystalReports.Design.dll" Component_="CrystalDecisions.CrystalReports.Design.dll" FileName="CRYSTA~6.DLL|CrystalDecisions.CrystalReports.Design.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Design.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\Newtonsoft.Json.3.5.8\lib\35\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.CrystalReports.Engine.dll" Component_="CrystalDecisions.CrystalReports.Engine.dll" FileName="CRYSTA~7.DLL|CrystalDecisions.CrystalReports.Engine.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.CrystalReports.TemplateEngine.dll" Component_="CrystalDecisions.CrystalReports.TemplateEngine.dll" FileName="CRYSTA~8.DLL|CrystalDecisions.CrystalReports.TemplateEngine.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.TemplateEngine.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.Data.AdoDotNetInterop.dll" Component_="CrystalDecisions.Data.AdoDotNetInterop.dll" FileName="CRYSTA~9.DLL|CrystalDecisions.Data.AdoDotNetInterop.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Data.AdoDotNetInterop.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportSource.dll" Component_="CrystalDecisions.ReportSource.dll" FileName="CRYST~10.DLL|CrystalDecisions.ReportSource.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.XmlSerialize.dll" Component_="CrystalDecisions.ReportAppServer.XmlSerialize.dll" FileName="CRYST~11.DLL|CrystalDecisions.ReportAppServer.XmlSerialize.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.XmlSerialize.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.Enterprise.Viewing.ReportSource.dll" Component_="CrystalDecisions.Enterprise.Viewing.ReportSource.dll" FileName="CRYST~12.DLL|CrystalDecisions.Enterprise.Viewing.ReportSource.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Enterprise.Viewing.ReportSource.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.ClientDoc.dll" Component_="CrystalDecisions.ReportAppServer.ClientDoc.dll" FileName="CRYST~13.DLL|CrystalDecisions.ReportAppServer.ClientDoc.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.ClientDoc.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.Controllers.dll" Component_="CrystalDecisions.ReportAppServer.Controllers.dll" FileName="CRYST~14.DLL|CrystalDecisions.ReportAppServer.Controllers.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.Controllers.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.CommonObjectModel.dll" Component_="CrystalDecisions.ReportAppServer.C_1_ommonObjectModel.dll" FileName="CRYST~15.DLL|CrystalDecisions.ReportAppServer.CommonObjectModel.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.CubeDefModel.dll" Component_="CrystalDecisions.ReportAppServer.CubeDefModel.dll" FileName="CRYST~16.DLL|CrystalDecisions.ReportAppServer.CubeDefModel.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.CubeDefModel.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.DataDefModel.dll" Component_="CrystalDecisions.ReportAppServer.DataDefModel.dll" FileName="CRYST~17.DLL|CrystalDecisions.ReportAppServer.DataDefModel.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.DataDefModel.dll" SelfReg="false"/>
+    <ROW File="PdfiumViewer.dll" Component_="PdfiumViewer.dll" FileName="PDFIUM~1.DLL|PdfiumViewer.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.Windows.Forms.dll" Component_="CrystalDecisions.Windows.Forms.dll" FileName="CRYST~18.DLL|CrystalDecisions.Windows.Forms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.DataSetConversion.dll" Component_="CrystalDecisions.ReportAppServer.DataSetConversion.dll" FileName="CRYST~19.DLL|CrystalDecisions.ReportAppServer.DataSetConversion.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.DataSetConversion.dll" SelfReg="false"/>
+    <ROW File="EnvDTE.dll" Component_="EnvDTE.dll" FileName="EnvDTE.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\EnvDTE.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.ReportAppServer.ObjectFactory.dll" Component_="CrystalDecisions.ReportAppServer.ObjectFactory.dll" FileName="CRYST~20.DLL|CrystalDecisions.ReportAppServer.ObjectFactory.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.ObjectFactory.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.Shared.dll" Component_="CrystalDecisions.Shared.dll" FileName="CRYST~21.DLL|CrystalDecisions.Shared.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll" SelfReg="false"/>
+    <ROW File="CrystalDecisions.VSDesigner.dll" Component_="CrystalDecisions.VSDesigner.dll" FileName="CRYST~22.DLL|CrystalDecisions.VSDesigner.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.VSDesigner.dll" SelfReg="false"/>
+    <ROW File="EntityFramework.SqlServer.dll" Component_="EntityFramework.SqlServer.dll" FileName="ENTITY~2.DLL|EntityFramework.SqlServer.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll" SelfReg="false"/>
+    <ROW File="System.Deployment.dll" Component_="System.Deployment.dll" FileName="SYSTEM~9.DLL|System.Deployment.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Deployment.dll" SelfReg="false"/>
+    <ROW File="PresentationFramework.dll" Component_="PresentationFramework.dll" FileName="PRESEN~2.DLL|PresentationFramework.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\PresentationFramework.dll" SelfReg="false"/>
+    <ROW File="ExcelDataReader.DataSet.dll" Component_="ExcelDataReader.DataSet.dll" FileName="EXCELD~1.DLL|ExcelDataReader.DataSet.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll" SelfReg="false"/>
+    <ROW File="ExcelDataReader.dll" Component_="ExcelDataReader.dll" FileName="EXCELD~2.DLL|ExcelDataReader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.DataAnnotations.dll" Component_="System.ComponentModel.DataAnnotations.dll" FileName="SYSTE~10.DLL|System.ComponentModel.DataAnnotations.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.ComponentModel.DataAnnotations.dll" SelfReg="false"/>
+    <ROW File="PdfSharpgdi.dll" Component_="PdfSharpgdi.dll" FileName="PDFSHA~1.DLL|PdfSharp-gdi.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\PDFsharp-gdi.1.50.5147\lib\net20\PdfSharp-gdi.dll" SelfReg="false"/>
+    <ROW File="QRCoder.dll" Component_="QRCoder.dll" FileName="QRCoder.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll" SelfReg="false"/>
+    <ROW File="QuestPDF.dll" Component_="QuestPDF.dll" FileName="QuestPDF.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\QuestPDF.2025.12.1\lib\netstandard2.0\QuestPDF.dll" SelfReg="false"/>
+    <ROW File="System.Configuration.dll" Component_="System.Configuration.dll" FileName="SYSTE~11.DLL|System.Configuration.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Configuration.dll" SelfReg="false"/>
+    <ROW File="System.Device.dll" Component_="System.Device.dll" FileName="SYSTE~12.DLL|System.Device.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Device.dll" SelfReg="false"/>
+    <ROW File="System.DirectoryServices.dll" Component_="System.DirectoryServices.dll" FileName="SYSTE~13.DLL|System.DirectoryServices.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.DirectoryServices.dll" SelfReg="false"/>
+    <ROW File="System.IO.Compression.dll" Component_="System.IO.Compression.dll" FileName="SYSTE~14.DLL|System.IO.Compression.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.IO.Compression.dll" SelfReg="false"/>
+    <ROW File="System.Management.dll" Component_="System.Management.dll" FileName="SYSTE~15.DLL|System.Management.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Management.dll" SelfReg="false"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTE~16.DLL|System.Net.Http.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Net.Http.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.dll" Component_="System.Numerics.dll" FileName="SYSTE~17.DLL|System.Numerics.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Numerics.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTE~18.DLL|System.Numerics.Vectors.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll" SelfReg="false"/>
+    <ROW File="System.Security.dll" Component_="System.Security.dll" FileName="SYSTE~19.DLL|System.Security.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Security.dll" SelfReg="false"/>
+    <ROW File="System.Transactions.dll" Component_="System.Transactions.dll" FileName="SYSTE~20.DLL|System.Transactions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Transactions.dll" SelfReg="false"/>
+    <ROW File="System.Web.Services.dll" Component_="System.Web.Services.dll" FileName="SYSTE~21.DLL|System.Web.Services.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Services.dll" SelfReg="false"/>
+    <ROW File="WindowsBase.dll" Component_="WindowsBase.dll" FileName="WINDOW~1.DLL|WindowsBase.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\WindowsBase.dll" SelfReg="false"/>
+    <ROW File="Zen.Barcode.Core.dll" Component_="Zen.Barcode.Core.dll" FileName="ZENBAR~1.DLL|Zen.Barcode.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\packages\Zen.Barcode.Core.2.0.0\lib\net45\Zen.Barcode.Core.dll" SelfReg="false"/>
+    <ROW File="ShockwaveFlashObjects.dll" Component_="ShockwaveFlashObjects.dll" FileName="SHOCKW~1.DLL|ShockwaveFlashObjects.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="System.Design.dll" Component_="System.Design.dll" FileName="SYSTE~22.DLL|System.Design.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Design.dll" SelfReg="false"/>
+    <ROW File="System.Web.dll" Component_="System.Web.dll" FileName="SYSTE~23.DLL|System.Web.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.dll" SelfReg="false"/>
+    <ROW File="stdole.dll" Component_="stdole.dll" FileName="stdole.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\stdole.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.Formatters.Soap.dll" Component_="System.Runtime.Serialization.Formatters.Soap.dll" FileName="SYSTE~24.DLL|System.Runtime.Serialization.Formatters.Soap.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Runtime.Serialization.Formatters.Soap.dll" SelfReg="false"/>
+    <ROW File="log4net.dll" Component_="log4net.dll" FileName="log4net.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Windows\assembly\GAC_64\log4net\1.2.10.0__692fbea5521e1304\log4net.dll" SelfReg="false"/>
+    <ROW File="Microsoft.VisualStudio.Shell.Interop.dll" Component_="Microsoft.VisualStudio.Shell.Interop.dll" FileName="MICROS~2.DLL|Microsoft.VisualStudio.Shell.Interop.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.Shell.Interop.dll" SelfReg="false"/>
+    <ROW File="Microsoft.VisualStudio.OLE.Interop.dll" Component_="Microsoft.VisualStudio.OLE.Interop.dll" FileName="MICROS~3.DLL|Microsoft.VisualStudio.OLE.Interop.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.OLE.Interop.dll" SelfReg="false"/>
+    <ROW File="CRVsPackageLib.dll" Component_="CRVsPackageLib.dll" FileName="CRVSPA~1.DLL|CRVsPackageLib.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CRVsPackageLib.dll" SelfReg="false"/>
+    <ROW File="VSLangProj.dll" Component_="VSLangProj.dll" FileName="VSLANG~1.DLL|VSLangProj.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\VSLangProj.dll" SelfReg="false"/>
+    <ROW File="EnvDTE80.dll" Component_="EnvDTE80.dll" FileName="EnvDTE80.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\EnvDTE80.dll" SelfReg="false"/>
+    <ROW File="libgcc_s_dw21.dll" Component_="libgcc_s_dw21.dll" FileName="LIBGCC~1.DLL|libgcc_s_dw2-1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x86\native\libgcc_s_dw2-1.dll" SelfReg="false"/>
+    <ROW File="Microsoft.VisualStudio.TextManager.Interop.dll" Component_="Microsoft.VisualStudio.TextManager.Interop.dll" FileName="MICROS~4.DLL|Microsoft.VisualStudio.TextManager.Interop.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.TextManager.Interop.dll" SelfReg="false"/>
+    <ROW File="zlib1.dll" Component_="zlib1.dll" FileName="zlib1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x86\native\zlib1.dll" SelfReg="false"/>
+    <ROW File="pdfium.dll" Component_="pdfium.dll" FileName="pdfium.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\x64\pdfium.dll" SelfReg="false"/>
+    <ROW File="libqpdf.dylib" Component_="crptFinishedIemsRecipe.cs" FileName="LIBQPD~1.DYL|libqpdf.dylib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\osx-arm64\native\libqpdf.dylib" SelfReg="false"/>
+    <ROW File="libstdc6.dll" Component_="libstdc6.dll" FileName="LIBSTD~1.DLL|libstdc++-6.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x64\native\libstdc++-6.dll" SelfReg="false"/>
+    <ROW File="QuestPdfSkia.dll" Component_="QuestPdfSkia.dll" FileName="QUESTP~1.DLL|QuestPdfSkia.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x86\native\QuestPdfSkia.dll" SelfReg="false"/>
+    <ROW File="libQuestPdfSkia.so" Component_="crptFinishedIemsRecipe.cs" FileName="LIBQUE~1.SO|libQuestPdfSkia.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\linux-musl-x64\native\libQuestPdfSkia.so" SelfReg="false"/>
+    <ROW File="libgcc_s_seh1.dll" Component_="libgcc_s_seh1.dll" FileName="LIBGCC~2.DLL|libgcc_s_seh-1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x64\native\libgcc_s_seh-1.dll" SelfReg="false"/>
+    <ROW File="libQuestPdfSkia.dylib" Component_="crptFinishedIemsRecipe.cs" FileName="LIBQUE~1.DYL|libQuestPdfSkia.dylib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\osx-x64\native\libQuestPdfSkia.dylib" SelfReg="false"/>
+    <ROW File="libwinpthread1.dll" Component_="libwinpthread1.dll" FileName="LIBWIN~1.DLL|libwinpthread-1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\runtimes\win-x86\native\libwinpthread-1.dll" SelfReg="false"/>
+    <ROW File="AccountrixFlow.pdb" Component_="AccountrixFlow.exe" FileName="ACCOUN~1.PDB|AccountrixFlow.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\bin\Debug\AccountrixFlow.pdb" SelfReg="false"/>
+    <ROW File="crptActivityReport.rpt" Component_="crptActivityReport.cs" FileName="CRPTAC~1.RPT|crptActivityReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\ActivityReports\crptActivityReport.rpt" SelfReg="false"/>
+    <ROW File="crptCashFlow.rpt" Component_="crptCashFlow.cs" FileName="CRPTCA~1.RPT|crptCashFlow.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\CashFlow\crptCashFlow.rpt" SelfReg="false"/>
+    <ROW File="crptCashFlowDetail.rpt" Component_="crptCashFlow.cs" FileName="CRPTCA~2.RPT|crptCashFlowDetail.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\CashFlow\crptCashFlowDetail.rpt" SelfReg="false"/>
+    <ROW File="crptAccountsBalanceReport.rpt" Component_="crptAccountsBalanceReport.cs" FileName="CRPTAC~1.RPT|crptAccountsBalanceReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\crptAccountsBalanceReport.rpt" SelfReg="false"/>
+    <ROW File="crptAccountsPayableReceivableWiseReport.rpt" Component_="crptAccountsBalanceReport.cs" FileName="CRPTAC~2.RPT|crptAccountsPayableReceivableWiseReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\crptAccountsPayableReceivableWiseReport.rpt" SelfReg="false"/>
+    <ROW File="crptBalanceSheet.rpt" Component_="crptAccountsBalanceReport.cs" FileName="CRPTBA~1.RPT|crptBalanceSheet.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\crptBalanceSheet.rpt" SelfReg="false"/>
+    <ROW File="crptCashBook.rpt" Component_="crptAccountsBalanceReport.cs" FileName="CRPTCA~1.RPT|crptCashBook.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\crptCashBook.rpt" SelfReg="false"/>
+    <ROW File="crptTrialBalance.rpt" Component_="crptAccountsBalanceReport.cs" FileName="CRPTTR~1.RPT|crptTrialBalance.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\crptTrialBalance.rpt" SelfReg="false"/>
+    <ROW File="crptLedgerReport.rpt" Component_="crptLedgerReport.cs" FileName="CRPTLE~1.RPT|crptLedgerReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\LeadgerReports\crptLedgerReport.rpt" SelfReg="false"/>
+    <ROW File="crptLedgerReportThermal.rpt" Component_="crptLedgerReport.cs" FileName="CRPTLE~2.RPT|crptLedgerReportThermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\LeadgerReports\crptLedgerReportThermal.rpt" SelfReg="false"/>
+    <ROW File="crptCustomerRecoveryReport1.rpt" Component_="crptCustomerRecoveryReport1.cs" FileName="CRPTCU~1.RPT|crptCustomerRecoveryReport1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\RecoveryReports\crptCustomerRecoveryReport1.rpt" SelfReg="false"/>
+    <ROW File="crptCustomerRecoveryReportBusinessAreaAndDateWise.rpt" Component_="crptCustomerRecoveryReport1.cs" FileName="CRPTCU~2.RPT|crptCustomerRecoveryReportBusinessAreaAndDateWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\RecoveryReports\crptCustomerRecoveryReportBusinessAreaAndDateWise.rpt" SelfReg="false"/>
+    <ROW File="crptPromisesReports1.rpt" Component_="crptCustomerRecoveryReport1.cs" FileName="CRPTPR~1.RPT|crptPromisesReports1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\RecoveryReports\crptPromisesReports1.rpt" SelfReg="false"/>
+    <ROW File="crptSaleManWiseCashRecoveryReport1.rpt" Component_="crptCustomerRecoveryReport1.cs" FileName="CRPTSA~1.RPT|crptSaleManWiseCashRecoveryReport1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\RecoveryReports\crptSaleManWiseCashRecoveryReport1.rpt" SelfReg="false"/>
+    <ROW File="crptSMRecoveryReport1.rpt" Component_="crptCustomerRecoveryReport1.cs" FileName="CRPTSM~1.RPT|crptSMRecoveryReport1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\RecoveryReports\crptSMRecoveryReport1.rpt" SelfReg="false"/>
+    <ROW File="crptSMSaleReturnCashBankReciptReport.rpt" Component_="crptCustomerRecoveryReport1.cs" FileName="CRPTSM~2.RPT|crptSMSaleReturnCashBankReciptReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AccountsReports\RecoveryReports\crptSMSaleReturnCashBankReciptReport.rpt" SelfReg="false"/>
+    <ROW File="crptCatagoryWiseSalesReportsLikeItems.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTCA~1.RPT|crptCatagoryWiseSalesReportsLikeItems.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptCatagoryWiseSalesReportsLikeItems.rpt" SelfReg="false"/>
+    <ROW File="crptCatagoryWiseSalesReportsLikeItemsDetails.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTCA~2.RPT|crptCatagoryWiseSalesReportsLikeItemsDetails.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptCatagoryWiseSalesReportsLikeItemsDetails.rpt" SelfReg="false"/>
+    <ROW File="crptCustomerNotVisitingSalesManWiseReport.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTCU~1.RPT|crptCustomerNotVisitingSalesManWiseReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptCustomerNotVisitingSalesManWiseReport.rpt" SelfReg="false"/>
+    <ROW File="crptDeadItemsNotSaled.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTDE~1.RPT|crptDeadItemsNotSaled.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptDeadItemsNotSaled.rpt" SelfReg="false"/>
+    <ROW File="crptFastAndSlowLikeItem.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTFA~1.RPT|crptFastAndSlowLikeItem.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptFastAndSlowLikeItem.rpt" SelfReg="false"/>
+    <ROW File="crptItemAndPartyWiseSalesReports.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTIT~1.RPT|crptItemAndPartyWiseSalesReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptItemAndPartyWiseSalesReports.rpt" SelfReg="false"/>
+    <ROW File="crptPartyAndItemsWiseSalesReports.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTPA~1.RPT|crptPartyAndItemsWiseSalesReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptPartyAndItemsWiseSalesReports.rpt" SelfReg="false"/>
+    <ROW File="crptSalesManCompanyWiseSales_And_Commission_ReportsLikeItemsDetails.r" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~1.RPT|crptSalesManCompanyWiseSales_And_Commission_ReportsLikeItemsDetails.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesManCompanyWiseSales_And_Commission_ReportsLikeItemsDetails.rpt" SelfReg="false"/>
+    <ROW File="crptSalesReportsLikeAnItem.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~2.RPT|crptSalesReportsLikeAnItem.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesReportsLikeAnItem.rpt" SelfReg="false"/>
+    <ROW File="crptSalesReportsLikeGodownAndPartyWiseInvoicesDetails.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~3.RPT|crptSalesReportsLikeGodownAndPartyWiseInvoicesDetails.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesReportsLikeGodownAndPartyWiseInvoicesDetails.rpt" SelfReg="false"/>
+    <ROW File="crptSalesReportsLikeInvoices.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~4.RPT|crptSalesReportsLikeInvoices.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesReportsLikeInvoices.rpt" SelfReg="false"/>
+    <ROW File="crptSalesReportsLikeInvoicesDetails.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~5.RPT|crptSalesReportsLikeInvoicesDetails.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesReportsLikeInvoicesDetails.rpt" SelfReg="false"/>
+    <ROW File="crptSalesReportsLikeInvoicesDetails1.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~6.RPT|crptSalesReportsLikeInvoicesDetails1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesReportsLikeInvoicesDetails1.rpt" SelfReg="false"/>
+    <ROW File="crptSalesReportsLikeInvoicesDetails2.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTSA~7.RPT|crptSalesReportsLikeInvoicesDetails2.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptSalesReportsLikeInvoicesDetails2.rpt" SelfReg="false"/>
+    <ROW File="crptWastageOfItems.rpt" Component_="crptCatagoryWiseSalesReportsLikeItems.cs" FileName="CRPTWA~1.RPT|crptWastageOfItems.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\crptWastageOfItems.rpt" SelfReg="false"/>
+    <ROW File="crptGodownWisePurchaseReportLikeItems.rpt" Component_="crptGodownWisePurchaseReportLikeItems.cs" FileName="CRPTGO~1.RPT|crptGodownWisePurchaseReportLikeItems.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\Purcchase\crptGodownWisePurchaseReportLikeItems.rpt" SelfReg="false"/>
+    <ROW File="crptPurchaseReportsLikeGodownWiseInvoicesDetailwithDisReceivable.rpt" Component_="crptGodownWisePurchaseReportLikeItems.cs" FileName="CRPTPU~1.RPT|crptPurchaseReportsLikeGodownWiseInvoicesDetailwithDisReceivable.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\Purcchase\crptPurchaseReportsLikeGodownWiseInvoicesDetailwithDisReceivable.rpt" SelfReg="false"/>
+    <ROW File="crptPurchaseReportsLikePartyandGod_2_ownWiseInvoicesDetailwithDisRece" Component_="crptGodownWisePurchaseReportLikeItems.cs" FileName="CRPTPU~2.RPT|crptPurchaseReportsLikePartyandGodownWiseInvoicesDetailwithDisReceivable.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\Purcchase\crptPurchaseReportsLikePartyandGodownWiseInvoicesDetailwithDisReceivable.rpt" SelfReg="false"/>
+    <ROW File="crptPurchaseReportsLikePartyWiseInvoicesDetailwithDisReceivable.rpt" Component_="crptGodownWisePurchaseReportLikeItems.cs" FileName="CRPTPU~3.RPT|crptPurchaseReportsLikePartyWiseInvoicesDetailwithDisReceivable.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\Purcchase\crptPurchaseReportsLikePartyWiseInvoicesDetailwithDisReceivable.rpt" SelfReg="false"/>
+    <ROW File="crptPurchaseReportsLikePartyWiseInvoicesDetailwithDisReceivable1.rpt" Component_="crptGodownWisePurchaseReportLikeItems.cs" FileName="CRPTPU~4.RPT|crptPurchaseReportsLikePartyWiseInvoicesDetailwithDisReceivable1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\AllSalesReports\Purcchase\crptPurchaseReportsLikePartyWiseInvoicesDetailwithDisReceivable1.rpt" SelfReg="false"/>
+    <ROW File="crptA5DeletedInvoiceSlip.rpt" Component_="crptA5DeletedInvoiceSlip.cs" FileName="CRPTA5~1.RPT|crptA5DeletedInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\DeletedReports\crptA5DeletedInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5DemandOrderSlip.rpt" Component_="crptA5DemandOrderSlip.cs" FileName="CRPTA5~1.RPT|crptA5DemandOrderSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Purchase\crptA5DemandOrderSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5PurchaseInvoiceSimpleSlip.rpt" Component_="crptA5DemandOrderSlip.cs" FileName="CRPTA5~2.RPT|crptA5PurchaseInvoiceSimpleSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Purchase\crptA5PurchaseInvoiceSimpleSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5PurchaseInvoiceSlip.rpt" Component_="crptA5DemandOrderSlip.cs" FileName="CRPTA5~3.RPT|crptA5PurchaseInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Purchase\crptA5PurchaseInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalDemandOrderSlip.rpt" Component_="crptA5DemandOrderSlip.cs" FileName="CRPTTH~1.RPT|crptThermalDemandOrderSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Purchase\crptThermalDemandOrderSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalPurchaseInvoiceSlip.rpt" Component_="crptA5DemandOrderSlip.cs" FileName="CRPTTH~2.RPT|crptThermalPurchaseInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Purchase\crptThermalPurchaseInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5GSTSaleInvoiceSlip.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTA5~1.RPT|crptA5GSTSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptA5GSTSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptDeliveryChallanA5.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTDE~1.RPT|crptDeliveryChallanA5.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptDeliveryChallanA5.rpt" SelfReg="false"/>
+    <ROW File="crptGatePassA5.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTGA~1.RPT|crptGatePassA5.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptGatePassA5.rpt" SelfReg="false"/>
+    <ROW File="crptGatePassThermal.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTGA~2.RPT|crptGatePassThermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptGatePassThermal.rpt" SelfReg="false"/>
+    <ROW File="crptQuotationSaleInvoiceA5Slip.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTQU~1.RPT|crptQuotationSaleInvoiceA5Slip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptQuotationSaleInvoiceA5Slip.rpt" SelfReg="false"/>
+    <ROW File="crptQuotationSaleInvoiceThermalSlip.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTQU~2.RPT|crptQuotationSaleInvoiceThermalSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptQuotationSaleInvoiceThermalSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipSimple.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTTH~2.RPT|crptThermalSaleInvoiceSlipSimple.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptThermalSaleInvoiceSlipSimple.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipUnitQty.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTTH~3.RPT|crptThermalSaleInvoiceSlipUnitQty.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptThermalSaleInvoiceSlipUnitQty.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipUnitQtyWithoutDis.rpt" Component_="crptA5GSTSaleInvoiceSlip.cs" FileName="CRPTTH~4.RPT|crptThermalSaleInvoiceSlipUnitQtyWithoutDis.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\crptThermalSaleInvoiceSlipUnitQtyWithoutDis.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt" Component_="crptA5SaleInvoiceSlip.cs" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Akmal Traders BahawalNagar\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="oldsoftwaresaleinvoice.rpt" Component_="crptA5SaleInvoiceSlip.cs" FileName="OLDSOF~1.RPT|old software saleinvoice .rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Akmal Traders BahawalNagar\old software saleinvoice .rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_9" Component_="crptA5SaleInvoiceSlip.cs_8" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Arsh Traders\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip22.rpt" Component_="crptA5SaleInvoiceSlip.cs_8" FileName="CRPTA5~2.RPT|crptA5SaleInvoiceSlip22.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Arsh Traders\crptA5SaleInvoiceSlip22.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_13" Component_="crptA5SaleInvoiceSlip.cs_8" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Arsh Traders\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_14" Component_="crptThermalSaleInvoiceSlip.cs" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\autoParts\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_15" Component_="crptThermalSaleInvoiceSlip.cs_6" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\baby store\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_10" Component_="crptA5SaleInvoiceSlip.cs_9" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\before Zha\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_16" Component_="crptThermalSaleInvoiceSlip.cs_7" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Bin Sadiq Umrah\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_11" Component_="crptA5SaleInvoiceSlip.cs_10" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_17" Component_="crptThermalSaleInvoiceSlip.cs_8" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Epson\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipSimple.rpt_5" Component_="crptThermalSaleInvoiceSlip.cs_8" FileName="CRPTTH~2.RPT|crptThermalSaleInvoiceSlipSimple.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Epson\crptThermalSaleInvoiceSlipSimple.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipUnitQty.rpt_3" Component_="crptThermalSaleInvoiceSlip.cs_8" FileName="CRPTTH~3.RPT|crptThermalSaleInvoiceSlipUnitQty.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Epson\crptThermalSaleInvoiceSlipUnitQty.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_12" Component_="crptA5SaleInvoiceSlip.cs_11" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Modern Auto\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_18" Component_="crptA5SaleInvoiceSlip.cs_11" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Modern Auto\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_13" Component_="crptA5SaleInvoiceSlip.cs_12" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Regular\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_19" Component_="crptA5SaleInvoiceSlip.cs_12" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Regular\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip1.rpt" Component_="crptA5SaleInvoiceSlip.cs_12" FileName="CRPTTH~2.RPT|crptThermalSaleInvoiceSlip1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Regular\crptThermalSaleInvoiceSlip1.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipSimple.rpt_6" Component_="crptA5SaleInvoiceSlip.cs_12" FileName="CRPTTH~3.RPT|crptThermalSaleInvoiceSlipSimple.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Regular\crptThermalSaleInvoiceSlipSimple.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_20" Component_="crptThermalSaleInvoiceSlip.cs_9" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Style Regualr\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip1.rpt_3" Component_="crptThermalSaleInvoiceSlip.cs_9" FileName="CRPTTH~2.RPT|crptThermalSaleInvoiceSlip1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Style Regualr\crptThermalSaleInvoiceSlip1.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_14" Component_="crptA5SaleInvoiceSlip.cs_13" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Style With Urdu\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlipPreBal.rpt" Component_="crptA5SaleInvoiceSlip.cs_13" FileName="CRPTA5~2.RPT|crptA5SaleInvoiceSlipPreBal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Style With Urdu\crptA5SaleInvoiceSlipPreBal.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_21" Component_="crptA5SaleInvoiceSlip.cs_13" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Style With Urdu\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_22" Component_="crptThermalSaleInvoiceSlip.cs_10" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\Extra Style\Umer\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlipDetailed.rpt" Component_="crptA5SaleInvoiceSlipDetailed.cs" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlipDetailed.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\SaleInvoiceA5\crptA5SaleInvoiceSlipDetailed.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" Component_="crptA5SaleInvoiceSlipDetailed.cs" FileName="CRPTA5~2.RPT|crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\SaleInvoiceA5\crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip_UniQty_UnitRate_Dis_DisAmt_Total.rpt" Component_="crptA5SaleInvoiceSlipDetailed.cs" FileName="CRPTA5~3.RPT|crptA5SaleInvoiceSlip_UniQty_UnitRate_Dis_DisAmt_Total.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\SaleInvoiceA5\crptA5SaleInvoiceSlip_UniQty_UnitRate_Dis_DisAmt_Total.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip_UniQty_UnitRate_Total.rpt" Component_="crptA5SaleInvoiceSlipDetailed.cs" FileName="CRPTA5~4.RPT|crptA5SaleInvoiceSlip_UniQty_UnitRate_Total.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\SaleInvoiceA5\crptA5SaleInvoiceSlip_UniQty_UnitRate_Total.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip_UniQty_UnitR_3_ate_DisAmt_Total.rpt" Component_="crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\SaleInvoiceA5\Extra\Fast Packages\crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip_UniQty_UnitR_3_ate_Dis_DisAmt_Total.rpt" Component_="crptA5SaleInvoiceSlip_UniQty_UnitR_2_ate_Dis_DisAmt_Total.cs" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip_UniQty_UnitRate_Dis_DisAmt_Total.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Sale\SaleInvoiceA5\Landscape\crptA5SaleInvoiceSlip_UniQty_UnitRate_Dis_DisAmt_Total.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlip.rpt_15" Component_="crptA5SaleInvoiceSlip.cs_14" FileName="CRPTA5~1.RPT|crptA5SaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\SaleBillsExtra\Butt G GS\crptA5SaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptA5SaleInvoiceSlipSimple.rpt" Component_="crptA5SaleInvoiceSlip.cs_14" FileName="CRPTA5~2.RPT|crptA5SaleInvoiceSlipSimple.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\SaleBillsExtra\Butt G GS\crptA5SaleInvoiceSlipSimple.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlip.rpt_23" Component_="crptA5SaleInvoiceSlip.cs_14" FileName="CRPTTH~1.RPT|crptThermalSaleInvoiceSlip.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\SaleBillsExtra\Butt G GS\crptThermalSaleInvoiceSlip.rpt" SelfReg="false"/>
+    <ROW File="crptThermalSaleInvoiceSlipSimple.rpt_7" Component_="crptA5SaleInvoiceSlip.cs_14" FileName="CRPTTH~2.RPT|crptThermalSaleInvoiceSlipSimple.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\SaleBillsExtra\Butt G GS\crptThermalSaleInvoiceSlipSimple.rpt" SelfReg="false"/>
+    <ROW File="crptA5WastageBill.rpt" Component_="crptA5WastageBill.cs" FileName="CRPTA5~1.RPT|crptA5WastageBill.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\BillsReports\Wastage\crptA5WastageBill.rpt" SelfReg="false"/>
+    <ROW File="ClaimReport.rpt" Component_="ClaimReport.cs" FileName="CLAIMR~1.RPT|ClaimReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ClaimReports\ClaimReport.rpt" SelfReg="false"/>
+    <ROW File="crptClaimBill.rpt" Component_="ClaimReport.cs" FileName="CRPTCL~1.RPT|crptClaimBill.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ClaimReports\crptClaimBill.rpt" SelfReg="false"/>
+    <ROW File="crptClaimReport1.rpt" Component_="ClaimReport.cs" FileName="CRPTCL~2.RPT|crptClaimReport1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ClaimReports\crptClaimReport1.rpt" SelfReg="false"/>
+    <ROW File="crptClaimReport2.rpt" Component_="ClaimReport.cs" FileName="CRPTCL~3.RPT|crptClaimReport2.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ClaimReports\crptClaimReport2.rpt" SelfReg="false"/>
+    <ROW File="crptActivityReport.rpt_3" Component_="crptActivityReport.rpt" FileName="CRPTAC~1.RPT|crptActivityReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptActivityReport.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfile.rpt" Component_="crptActivityReport.rpt" FileName="CRPTIT~1.RPT|crptItemsProfile.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptItemsProfile.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfile1.rpt" Component_="crptActivityReport.rpt" FileName="CRPTIT~2.RPT|crptItemsProfile1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptItemsProfile1.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfile1Thermal.rpt" Component_="crptActivityReport.rpt" FileName="CRPTIT~3.RPT|crptItemsProfile1Thermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptItemsProfile1Thermal.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfileThermal.rpt" Component_="crptActivityReport.rpt" FileName="CRPTIT~4.RPT|crptItemsProfileThermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptItemsProfileThermal.rpt" SelfReg="false"/>
+    <ROW File="crptItemsThatHaveZeroStock.rpt" Component_="crptActivityReport.rpt" FileName="CRPTIT~5.RPT|crptItemsThatHaveZeroStock.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptItemsThatHaveZeroStock.rpt" SelfReg="false"/>
+    <ROW File="crptListTypesData.rpt" Component_="crptActivityReport.rpt" FileName="CRPTLI~1.RPT|crptListTypesData.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptListTypesData.rpt" SelfReg="false"/>
+    <ROW File="crptStockDemand.rpt" Component_="crptActivityReport.rpt" FileName="CRPTST~1.RPT|crptStockDemand.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\crptStockDemand.rpt" SelfReg="false"/>
+    <ROW File="crptDOReportDispatchItems.rpt" Component_="crptDOReportDispatchItems.cs" FileName="CRPTDO~1.RPT|crptDOReportDispatchItems.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\DeliveryOrderDispatchReports\crptDOReportDispatchItems.rpt" SelfReg="false"/>
+    <ROW File="crptDOReportSalesManShopWiseLikeItems.rpt" Component_="crptDOReportDispatchItems.cs" FileName="CRPTDO~2.RPT|crptDOReportSalesManShopWiseLikeItems.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\DeliveryOrderDispatchReports\crptDOReportSalesManShopWiseLikeItems.rpt" SelfReg="false"/>
+    <ROW File="crptSaleManAreaWiseRecorverySheet.rpt" Component_="crptDOReportDispatchItems.cs" FileName="CRPTSA~1.RPT|crptSaleManAreaWiseRecorverySheet.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\DeliveryOrderDispatchReports\crptSaleManAreaWiseRecorverySheet.rpt" SelfReg="false"/>
+    <ROW File="ForecastDetail.rpt" Component_="ForecastDetail.cs" FileName="FORECA~1.RPT|ForecastDetail.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\Forecast\ForecastDetail.rpt" SelfReg="false"/>
+    <ROW File="ForecastDetail1.rpt" Component_="ForecastDetail.cs" FileName="FORECA~2.RPT|ForecastDetail1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\Forecast\ForecastDetail1.rpt" SelfReg="false"/>
+    <ROW File="GodownStockTransferBill.rpt" Component_="GodownStockTransferBill.cs" FileName="GODOWN~1.RPT|GodownStockTransferBill.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\GodownsReports\GodownStockTransferBill.rpt" SelfReg="false"/>
+    <ROW File="GodownStockTransferBillThermal.rpt" Component_="GodownStockTransferBill.cs" FileName="GODOWN~2.RPT|GodownStockTransferBillThermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\GodownsReports\GodownStockTransferBillThermal.rpt" SelfReg="false"/>
+    <ROW File="GodownStockTransferReports.rpt" Component_="GodownStockTransferBill.cs" FileName="GODOWN~3.RPT|GodownStockTransferReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\GodownsReports\GodownStockTransferReports.rpt" SelfReg="false"/>
+    <ROW File="GodownStockTransferReports.rpt_4" Component_="crptActivityReport.rpt" FileName="GODOWN~1.RPT|GodownStockTransferReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\GodownStockTransferReports.rpt" SelfReg="false"/>
+    <ROW File="crptFinishedIemsRecipe.rpt" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTFI~1.RPT|crptFinishedIemsRecipe.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptFinishedIemsRecipe.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfile.rpt_3" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~1.RPT|crptItemsProfile.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsProfile.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfile1.rpt_3" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~2.RPT|crptItemsProfile1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsProfile1.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfile1Thermal.rpt_3" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~3.RPT|crptItemsProfile1Thermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsProfile1Thermal.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfileManually.rpt" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~4.RPT|crptItemsProfileManually.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsProfileManually.rpt" SelfReg="false"/>
+    <ROW File="crptItemsProfileThermal.rpt_3" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~5.RPT|crptItemsProfileThermal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsProfileThermal.rpt" SelfReg="false"/>
+    <ROW File="crptItemsRateList.rpt" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~6.RPT|crptItemsRateList.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsRateList.rpt" SelfReg="false"/>
+    <ROW File="crptItemsThatHaveZeroStock.rpt_3" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTIT~7.RPT|crptItemsThatHaveZeroStock.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptItemsThatHaveZeroStock.rpt" SelfReg="false"/>
+    <ROW File="crptListTypesData.rpt_3" Component_="crptFinishedIemsRecipe.cs_2" FileName="CRPTLI~1.RPT|crptListTypesData.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\crptListTypesData.rpt" SelfReg="false"/>
+    <ROW File="GodownStockTransferReports.rpt_5" Component_="crptFinishedIemsRecipe.cs_2" FileName="GODOWN~1.RPT|GodownStockTransferReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ItemsProfile\GodownStockTransferReports.rpt" SelfReg="false"/>
+    <ROW File="crptBankProfiles.rpt" Component_="crptBankProfiles.cs" FileName="CRPTBA~1.RPT|crptBankProfiles.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptBankProfiles.rpt" SelfReg="false"/>
+    <ROW File="crptCustomerProfiles.rpt" Component_="crptBankProfiles.cs" FileName="CRPTCU~1.RPT|crptCustomerProfiles.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptCustomerProfiles.rpt" SelfReg="false"/>
+    <ROW File="crptCustomerRootPlain.rpt" Component_="crptBankProfiles.cs" FileName="CRPTCU~2.RPT|crptCustomerRootPlain.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptCustomerRootPlain.rpt" SelfReg="false"/>
+    <ROW File="crptCustomerRootPlain1.rpt" Component_="crptBankProfiles.cs" FileName="CRPTCU~3.RPT|crptCustomerRootPlain1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptCustomerRootPlain1.rpt" SelfReg="false"/>
+    <ROW File="crptDeliveryPersonProfiles.rpt" Component_="crptBankProfiles.cs" FileName="CRPTDE~1.RPT|crptDeliveryPersonProfiles.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptDeliveryPersonProfiles.rpt" SelfReg="false"/>
+    <ROW File="crptEmployeeProfiles.rpt" Component_="crptBankProfiles.cs" FileName="CRPTEM~1.RPT|crptEmployeeProfiles.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptEmployeeProfiles.rpt" SelfReg="false"/>
+    <ROW File="crptExpensesProfiles.rpt" Component_="crptBankProfiles.cs" FileName="CRPTEX~1.RPT|crptExpensesProfiles.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptExpensesProfiles.rpt" SelfReg="false"/>
+    <ROW File="crptOthersTypesOfAccountProfiles.rpt" Component_="crptBankProfiles.cs" FileName="CRPTOT~1.RPT|crptOthersTypesOfAccountProfiles.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptOthersTypesOfAccountProfiles.rpt" SelfReg="false"/>
+    <ROW File="crptSupplierProfile.rpt" Component_="crptBankProfiles.cs" FileName="CRPTSU~1.RPT|crptSupplierProfile.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\MasterAccoutsProfiles\crptSupplierProfile.rpt" SelfReg="false"/>
+    <ROW File="crptA5CashReciptAndPaymentsVouchers.rpt" Component_="crptA5CashReciptAndPaymentsVouchers.cs" FileName="CRPTA5~1.RPT|crptA5CashReciptAndPaymentsVouchers.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\PrintVoucher\crptA5CashReciptAndPaymentsVouchers.rpt" SelfReg="false"/>
+    <ROW File="crptPrintThermalExpenses.rpt" Component_="crptA5CashReciptAndPaymentsVouchers.cs" FileName="CRPTPR~1.RPT|crptPrintThermalExpenses.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\PrintVoucher\crptPrintThermalExpenses.rpt" SelfReg="false"/>
+    <ROW File="crptPrintVouchers.rpt" Component_="crptA5CashReciptAndPaymentsVouchers.cs" FileName="CRPTPR~2.RPT|crptPrintVouchers.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\PrintVoucher\crptPrintVouchers.rpt" SelfReg="false"/>
+    <ROW File="crptThermalCashReciptAndPaymentsVouchers.rpt" Component_="crptA5CashReciptAndPaymentsVouchers.cs" FileName="CRPTTH~1.RPT|crptThermalCashReciptAndPaymentsVouchers.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\PrintVoucher\crptThermalCashReciptAndPaymentsVouchers.rpt" SelfReg="false"/>
+    <ROW File="ProcessControlDetailReport.rpt" Component_="ProcessControlDetailReport.cs" FileName="PROCES~1.RPT|ProcessControlDetailReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProcessControlReports\ProcessControlDetailReport.rpt" SelfReg="false"/>
+    <ROW File="crptProductionLikeBatchNoWise.rpt" Component_="crptProductionLikeBatchNoWise.cs" FileName="CRPTPR~1.RPT|crptProductionLikeBatchNoWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProductionAndRMCReports\crptProductionLikeBatchNoWise.rpt" SelfReg="false"/>
+    <ROW File="crptRMCLikeBatchNoWise.rpt" Component_="crptProductionLikeBatchNoWise.cs" FileName="CRPTRM~1.RPT|crptRMCLikeBatchNoWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProductionAndRMCReports\crptRMCLikeBatchNoWise.rpt" SelfReg="false"/>
+    <ROW File="crptPLCatagoryWiseSalesLikeItems.rpt" Component_="crptPLCatagoryWiseSalesLikeItems.cs" FileName="CRPTPL~1.RPT|crptPLCatagoryWiseSalesLikeItems.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\crptPLCatagoryWiseSalesLikeItems.rpt" SelfReg="false"/>
+    <ROW File="crptPLCompanyWiseSales.rpt" Component_="crptPLCatagoryWiseSalesLikeItems.cs" FileName="CRPTPL~2.RPT|crptPLCompanyWiseSales.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\crptPLCompanyWiseSales.rpt" SelfReg="false"/>
+    <ROW File="crptPLReportsDateWiseSummary.rpt" Component_="crptPLCatagoryWiseSalesLikeItems.cs" FileName="CRPTPL~3.RPT|crptPLReportsDateWiseSummary.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\crptPLReportsDateWiseSummary.rpt" SelfReg="false"/>
+    <ROW File="crptPLReportsLikeInvoices.rpt" Component_="crptPLCatagoryWiseSalesLikeItems.cs" FileName="CRPTPL~4.RPT|crptPLReportsLikeInvoices.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\crptPLReportsLikeInvoices.rpt" SelfReg="false"/>
+    <ROW File="crptPLReportsLikeInvoicesDetails.rpt" Component_="crptPLCatagoryWiseSalesLikeItems.cs" FileName="CRPTPL~5.RPT|crptPLReportsLikeInvoicesDetails.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\crptPLReportsLikeInvoicesDetails.rpt" SelfReg="false"/>
+    <ROW File="crptItemAndPartyWiseSalesReports.rpt_3" Component_="crptItemAndPartyWiseSalesReports.cs" FileName="CRPTIT~1.RPT|crptItemAndPartyWiseSalesReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\Extra\crptItemAndPartyWiseSalesReports.rpt" SelfReg="false"/>
+    <ROW File="crptPartyAndItemsWiseSalesReports.rpt_3" Component_="crptItemAndPartyWiseSalesReports.cs" FileName="CRPTPA~1.RPT|crptPartyAndItemsWiseSalesReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\Extra\crptPartyAndItemsWiseSalesReports.rpt" SelfReg="false"/>
+    <ROW File="crptPLReportsLikeInvoicesDetails.rpt_3" Component_="crptItemAndPartyWiseSalesReports.cs" FileName="CRPTPL~1.RPT|crptPLReportsLikeInvoicesDetails.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ProfitLoseReports\Extra\crptPLReportsLikeInvoicesDetails.rpt" SelfReg="false"/>
+    <ROW File="x25mm.rpt" Component_="x25mm.cs" FileName="38x25mm.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\QrCodeReports\38x25mm.rpt" SelfReg="false"/>
+    <ROW File="x25mmOrignal.rpt" Component_="x25mm.cs" FileName="38X25M~1.RPT|38x25mmOrignal.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\QrCodeReports\38x25mmOrignal.rpt" SelfReg="false"/>
+    <ROW File="x25mm_2up.rpt" Component_="x25mm.cs" FileName="50X25M~1.RPT|50x25mm_2up.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\QrCodeReports\50x25mm_2up.rpt" SelfReg="false"/>
+    <ROW File="ReportstoCheckHowmanyPurchasesEditedhowmanyTimes.rpt" Component_="crptActivityReport.rpt" FileName="REPORT~1.RPT|ReportstoCheckHowmanyPurchasesEditedhowmanyTimes.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ReportstoCheckHowmanyPurchasesEditedhowmanyTimes.rpt" SelfReg="false"/>
+    <ROW File="ReportstoCheckHowmanySalesEditedhowmanyTimes.rpt" Component_="crptActivityReport.rpt" FileName="REPORT~2.RPT|ReportstoCheckHowmanySalesEditedhowmanyTimes.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\ReportstoCheckHowmanySalesEditedhowmanyTimes.rpt" SelfReg="false"/>
+    <ROW File="crptLikeInvoices1.rpt" Component_="crptLikeInvoices1.cs" FileName="CRPTLI~1.RPT|crptLikeInvoices1.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockAdj\crptLikeInvoices1.rpt" SelfReg="false"/>
+    <ROW File="crptLikeInvoices2.rpt" Component_="crptLikeInvoices1.cs" FileName="CRPTLI~2.RPT|crptLikeInvoices2.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockAdj\crptLikeInvoices2.rpt" SelfReg="false"/>
+    <ROW File="StockAdjBill.rpt" Component_="crptLikeInvoices1.cs" FileName="STOCKA~1.RPT|StockAdjBill.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockAdj\StockAdjBill.rpt" SelfReg="false"/>
+    <ROW File="crptGodownLineItemCompanyAndCategoryWise.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTGO~1.RPT|crptGodownLineItem,CompanyAndCategoryWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptGodownLineItem,CompanyAndCategoryWise.rpt" SelfReg="false"/>
+    <ROW File="crptItemLeadgerReports.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTIT~1.RPT|crptItemLeadgerReports.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptItemLeadgerReports.rpt" SelfReg="false"/>
+    <ROW File="crptLineItemCompanyAndCategoryGodownWise.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTLI~1.RPT|crptLineItem,CompanyAndCategoryGodownWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptLineItem,CompanyAndCategoryGodownWise.rpt" SelfReg="false"/>
+    <ROW File="crptOverStockReport.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTOV~1.RPT|crptOverStockReport.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptOverStockReport.rpt" SelfReg="false"/>
+    <ROW File="crptStockDemandOrder.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTST~1.RPT|crptStockDemandOrder.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptStockDemandOrder.rpt" SelfReg="false"/>
+    <ROW File="crptStockDemandOrderSystematically.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTST~2.RPT|crptStockDemandOrderSystematically.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptStockDemandOrderSystematically.rpt" SelfReg="false"/>
+    <ROW File="crptStockDemandOrderSystematicallyWithLastPurchaseDrtail.rpt" Component_="crptGodownLineItemCompanyAndCategoryWise.cs" FileName="CRPTST~3.RPT|crptStockDemandOrderSystematicallyWithLastPurchaseDrtail.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\crptStockDemandOrderSystematicallyWithLastPurchaseDrtail.rpt" SelfReg="false"/>
+    <ROW File="crptGodownandLineitemWise.rpt" Component_="crptCompanyCategoryGodownWise.cs" FileName="CRPTGO~1.RPT|crptGodownandLineitemWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\Movement Report\crptGodownandLineitemWise.rpt" SelfReg="false"/>
+    <ROW File="crptLocationCompanyCategoryAndGodownWise.rpt" Component_="crptCompanyCategoryGodownWise.cs" FileName="CRPTLO~1.RPT|crptLocationCompanyCategoryAndGodownWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\Movement Report\crptLocationCompanyCategoryAndGodownWise.rpt" SelfReg="false"/>
+    <ROW File="crptLocationGodownCompanyAndCategoryWise.rpt" Component_="crptCompanyCategoryGodownWise.cs" FileName="CRPTLO~2.RPT|crptLocationGodownCompanyAndCategoryWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\StockReports\Movement Report\crptLocationGodownCompanyAndCategoryWise.rpt" SelfReg="false"/>
+    <ROW File="crptGodownLineItemCompanyCatagoryWise.rpt" Component_="crptGodownLineItemCompanyCatagoryWise.cs" FileName="CRPTGO~1.RPT|crptGodown,LineItem,Company,CatagoryWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\STReports\Qty\crptGodown,LineItem,Company,CatagoryWise.rpt" SelfReg="false"/>
+    <ROW File="crptGodownLineItemCompanyCatagoryW_3_ise.rpt" Component_="crptGodownLineItemCompanyCatagoryW_2_ise.cs" FileName="CRPTGO~1.RPT|crptGodown,LineItem,Company,CatagoryWise.rpt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\Erp\Erp\Reports\STReports\QtyWithValue\crptGodown,LineItem,Company,CatagoryWise.rpt" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="AnyCPU_Debug" BuildName="AnyCPU_Debug" BuildOrder="1" BuildType="0" Languages="en_GB" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en_GB.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="LaunchApp"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="System.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="crptFinishedIemsRecipe.cs"/>
+    <ROW Feature_="MainFeature" Component_="AshUsercontrol.dll"/>
+    <ROW Feature_="MainFeature" Component_="VsWebSite.Interop.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.DataSetExtensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="mscorlib.dll"/>
+    <ROW Feature_="MainFeature" Component_="netstandard.dll"/>
+    <ROW Feature_="MainFeature" Component_="AshTBox.dll"/>
+    <ROW Feature_="MainFeature" Component_="qpdf.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.ReportDefModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.CSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="PresentationCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.Web.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.dll"/>
+    <ROW Feature_="MainFeature" Component_="SpellNumber.dll"/>
+    <ROW Feature_="MainFeature" Component_="EntityFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.Prompting.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.CommonControls.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.Linq.dll"/>
+    <ROW Feature_="MainFeature" Component_="AccountrixFlow.exe"/>
+    <ROW Feature_="MainFeature" Component_="AxShockwaveFlashObjects.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.CommLayer.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.CrystalReports.Design.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.CrystalReports.Engine.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.CrystalReports.TemplateEngine.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.Data.AdoDotNetInterop.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportSource.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.XmlSerialize.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.Enterprise.Viewing.ReportSource.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.ClientDoc.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.Controllers.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.C_1_ommonObjectModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.CubeDefModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.DataDefModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="PdfiumViewer.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.DataSetConversion.dll"/>
+    <ROW Feature_="MainFeature" Component_="EnvDTE.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.ReportAppServer.ObjectFactory.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.Shared.dll"/>
+    <ROW Feature_="MainFeature" Component_="CrystalDecisions.VSDesigner.dll"/>
+    <ROW Feature_="MainFeature" Component_="EntityFramework.SqlServer.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Deployment.dll"/>
+    <ROW Feature_="MainFeature" Component_="PresentationFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="ExcelDataReader.DataSet.dll"/>
+    <ROW Feature_="MainFeature" Component_="ExcelDataReader.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.DataAnnotations.dll"/>
+    <ROW Feature_="MainFeature" Component_="PdfSharpgdi.dll"/>
+    <ROW Feature_="MainFeature" Component_="QRCoder.dll"/>
+    <ROW Feature_="MainFeature" Component_="QuestPDF.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Configuration.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Device.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.DirectoryServices.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Compression.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Management.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Http.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.Vectors.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Transactions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Web.Services.dll"/>
+    <ROW Feature_="MainFeature" Component_="WindowsBase.dll"/>
+    <ROW Feature_="MainFeature" Component_="Zen.Barcode.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="ShockwaveFlashObjects.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Design.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Web.dll"/>
+    <ROW Feature_="MainFeature" Component_="stdole.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.Formatters.Soap.dll"/>
+    <ROW Feature_="MainFeature" Component_="log4net.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.VisualStudio.Shell.Interop.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.VisualStudio.OLE.Interop.dll"/>
+    <ROW Feature_="MainFeature" Component_="CRVsPackageLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="VSLangProj.dll"/>
+    <ROW Feature_="MainFeature" Component_="EnvDTE80.dll"/>
+    <ROW Feature_="MainFeature" Component_="libgcc_s_dw21.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.VisualStudio.TextManager.Interop.dll"/>
+    <ROW Feature_="MainFeature" Component_="zlib1.dll"/>
+    <ROW Feature_="MainFeature" Component_="pdfium.dll"/>
+    <ROW Feature_="MainFeature" Component_="libstdc6.dll"/>
+    <ROW Feature_="MainFeature" Component_="QuestPdfSkia.dll"/>
+    <ROW Feature_="MainFeature" Component_="libgcc_s_seh1.dll"/>
+    <ROW Feature_="MainFeature" Component_="libwinpthread1.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="crptActivityReport.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptCashFlow.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptAccountsBalanceReport.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptLedgerReport.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptCustomerRecoveryReport1.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptCatagoryWiseSalesReportsLikeItems.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptGodownWisePurchaseReportLikeItems.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5DeletedInvoiceSlip.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5DemandOrderSlip.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5GSTSaleInvoiceSlip.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_8"/>
+    <ROW Feature_="MainFeature" Component_="crptThermalSaleInvoiceSlip.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptThermalSaleInvoiceSlip.cs_6"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_9"/>
+    <ROW Feature_="MainFeature" Component_="crptThermalSaleInvoiceSlip.cs_7"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_10"/>
+    <ROW Feature_="MainFeature" Component_="crptThermalSaleInvoiceSlip.cs_8"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_11"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_12"/>
+    <ROW Feature_="MainFeature" Component_="crptThermalSaleInvoiceSlip.cs_9"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_13"/>
+    <ROW Feature_="MainFeature" Component_="crptThermalSaleInvoiceSlip.cs_10"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlipDetailed.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip_UniQty_UnitRate_DisAmt_Total.rpt"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip_UniQty_UnitR_2_ate_Dis_DisAmt_Total.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5SaleInvoiceSlip.cs_14"/>
+    <ROW Feature_="MainFeature" Component_="crptA5WastageBill.cs"/>
+    <ROW Feature_="MainFeature" Component_="ClaimReport.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptActivityReport.rpt"/>
+    <ROW Feature_="MainFeature" Component_="crptDOReportDispatchItems.cs"/>
+    <ROW Feature_="MainFeature" Component_="ForecastDetail.cs"/>
+    <ROW Feature_="MainFeature" Component_="GodownStockTransferBill.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptFinishedIemsRecipe.cs_2"/>
+    <ROW Feature_="MainFeature" Component_="crptBankProfiles.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptA5CashReciptAndPaymentsVouchers.cs"/>
+    <ROW Feature_="MainFeature" Component_="ProcessControlDetailReport.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptProductionLikeBatchNoWise.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptPLCatagoryWiseSalesLikeItems.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptItemAndPartyWiseSalesReports.cs"/>
+    <ROW Feature_="MainFeature" Component_="x25mm.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptLikeInvoices1.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptGodownLineItemCompanyAndCategoryWise.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptCompanyCategoryGodownWise.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptGodownLineItemCompanyCatagoryWise.cs"/>
+    <ROW Feature_="MainFeature" Component_="crptGodownLineItemCompanyCatagoryW_2_ise.cs"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="AccountrixFlowIcon.exe" SourcePath="..\Erp\Erp\Accountrix Flow Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="AnyCPU_Debug"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] can not be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="AnyCPU_Debug"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] can not be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="AnyCPU_Debug"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="AnyCPU_Debug"/>
+    <ROW Condition="VersionNT" Description="[ProductName] can not be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="AnyCPU_Debug"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Erp2026" Directory_="SHORTCUTDIR" Name="ERP202~1|Erp 2026" Component_="AccountrixFlow.exe" Target="[#AccountrixFlow.exe]" Description="Erp 2026" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Erp2026_1" Directory_="DesktopFolder" Name="ERP202~1|Erp 2026" Component_="AccountrixFlow.exe" Target="[#AccountrixFlow.exe]" Description="Erp 2026" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="769" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
