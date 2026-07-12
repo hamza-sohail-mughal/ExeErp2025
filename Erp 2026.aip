@@ -8,10 +8,10 @@
     <ROW Property="ARPPRODUCTICON" Value="AccountrixFlowIcon.exe" Type="8"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="AccountrixFlow.com"/>
-    <ROW Property="ProductCode" Value="2057:{12467238-BE9C-4BAA-AA09-DCA0D519BBA7} " Type="16"/>
+    <ROW Property="ProductCode" Value="2057:{89D39ED0-110D-4370-A8D0-FD73A9904D25} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Erp"/>
-    <ROW Property="ProductVersion" Value="1.5.2.20" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.5.2.21" Options="32"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{73FBD286-545B-4C1A-9475-0DFCC3F3C27A}"/>
