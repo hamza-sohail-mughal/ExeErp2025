@@ -1,5 +1,5 @@
 {
-  "latestVersion": "1.5.2.28",
+  "latestVersion": "1.5.2.29",
   "downloadUrl": "https://raw.githubusercontent.com/hamza-sohail-mughal/ExeErp2025/main/Erp%202026-AnyCPU_Debug-SetupFiles/Erp%202026.msi",
   "releaseNotes": "Is update mein kya naya hai:\r\n\r\n1) Naya Items Rate List (PDF) screen - customer ko rate list bhejne ke liye. Retail / Wholesale / Trading / Slab rates, page ko 2-5 columns mein split, aur Thermal roll print.\r\n\r\n2) Sale invoice print par ab amount ke baad .00 nahi aata.\r\n\r\nUpdate Date: 08-08-2026",
   "updatedAt": "2026-08-08"
