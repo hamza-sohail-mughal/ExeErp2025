@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.5.2.29",
+  "latestVersion": "1.5.2.30",
   "downloadUrl": "https://raw.githubusercontent.com/hamza-sohail-mughal/ExeErp2025/main/Erp%202026-AnyCPU_Debug-SetupFiles/Erp%202026.msi",
-  "releaseNotes": "Is update mein kya naya hai:\r\n\r\n1) Naya Items Rate List (PDF) screen - customer ko rate list bhejne ke liye. Retail / Wholesale / Trading / Slab rates, page ko 2-5 columns mein split, aur Thermal roll print.\r\n\r\n2) Sale invoice print par ab amount ke baad .00 nahi aata.\r\n\r\nUpdate Date: 08-08-2026",
-  "updatedAt": "2026-08-08"
+  "releaseNotes": "Is update mein kya naya hai:\r\n\r\n1) Ab aap ONLINE apne customer se order le sakte hain. Apne items ka rate list ek link par bhejein, customer woh link khol kar khud order kare, aur woh order seedha aapke system mein Sale Order ban kar aa jaye - phir usi se Sale Invoice.\r\n\r\n2) Slab (quantity) rates ab online link par bhi. Zyada qty par sasta rate customer ko wahin nazar aata hai; slab na bane to aapka chuna hua Retail / Wholesale / Trading rate lagta hai.\r\n\r\n3) Items Rate List screen par kisi bhi item par double-click (ya Ctrl+O) - item wahin update karein, list foran refresh ho jati hai.\r\n\r\nUpdate Date: 13-08-2026",
+  "updatedAt": "2026-08-13"
 }
