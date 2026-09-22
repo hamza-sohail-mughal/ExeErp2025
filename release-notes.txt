@@ -1,0 +1,22 @@
+Is update mein kya naya hai:
+
+1) SERVER BAND HO TO BHI BILLING - ab app server ke baghair bhi khulti hai. Login karte hi seedha Sale screen (Offline mode ON) aa jati hai, aur bill local mehfooz hote hain. Server aane par 'Offline Invoices' se sync kar lijiye.
+   - Offline login sirf us user ke liye chalta hai jisne is PC par pehle ek dafa server ke saath login kiya ho. Password mehfooz tareeqe se (hash + Windows encryption) rakha jata hai, kabhi sadi shakal mein nahi.
+   - Items, customers aur Sale screen ki dropdown list ab computer par mehfooz rehti hain, is liye app band karne ke baad bhi offline kaam chalta hai.
+   - Login ke waqt server mil jaye to sab kuch pehle jaisa - dashboard aur mukammal online kaam.
+
+2) Item search mein naya item wahin se banayen - Sale/Purchase ki search list par 'Add New Item (F3)'. Naam na mile to hint aata hai; Enter ya F3 se Item form khulta hai (naam pehle se bhara) aur save karte hi item invoice mein aa jata hai.
+
+3) Item form mein Company aur Category lazmi nahi, aur Line Item pichli baar wala khud select hota hai.
+
+4) Article No ka column (Sale/Purchase search + View Items Record) aur Article No se search har jagah.
+
+5) 'Starts With' item search (Management > Sale Screen). On karne par jo likhen wo naam ke KISI BHI LAFZ ki shuruaat se milta hai: 'johar' se 'QARSHI JOHAR JOSHANDA' mil jata hai, magar lafz ke beech se nahi.
+
+6) Management ki saari sale/purchase settings ab DATABASE mein - ek dafa set karen, business ke har PC par wohi lagu (ek dafa ERP Settings > Run Migrations chalayen).
+
+7) Dashboard ke Items card par click se View Items Record, aur Shop Information screen beech mein khulti hai.
+
+8) Offline billing ki durustgi: offline invoice edit ke liye theek khulta hai; grid par row badalne ki rukawat khatam; ek hi sale do baar sync hone ke raaste band; multi-business mein sirf apne business ke offline invoice; bijli jane par adhoora bill zaya nahi hota; bina save kiye band karne par tanbeeh.
+
+Update Date: 15-09-2026
