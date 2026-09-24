@@ -1,24 +1,12 @@
 Is update mein kya naya hai:
 
-1) INTERNET band hai ya SERVER - app ab farq bata deti hai. Pehle dono soorton mein ek hi baat likhi aati thi "server se raabta nahi ho saka", aur aap samajh nahi pate thay ke masla apni taraf hai ya hamari taraf.
-   - Aap ka internet band ho to app saaf kehti hai ke internet check karen - LAN cable, Wi-Fi ya router.
-   - Internet theek ho aur server ka masla ho to app kehti hai ke ye aap ki taraf ka masla nahi, vendor ko ittela karen.
-   - Error message mein ab server ka pata (address) nahi dikhaya jata.
+1) ITEM SEARCH (F1) mein item ka naam ab zyada jagah par poora nazar aata hai. Baqi columns thore patle kar diye gaye hain taake cashier ko lamba naam kata hua na mile.
+   - 'Article No' ka column ab shuru mein band hota hai, kyun ke aksar dukanon mein ye khali rehta tha.
+   - Agar aap article number rakhte hain to Shop Information > Sale mein 'Item search mein Article No column dikhayen' par tick laga den. Ye Items Record screen par bhi lagu hota hai.
+   - Article number se search pehle ki tarah kaam karti hai, column band ho tab bhi.
 
-2) SUST SERVER ab app ko rok nahi sakta. Cloud server ka thanda database jagne mein kabhi kabhi chand second zyada lagate hain. Pehle app sirf 5 second intezar karti thi aur "server ki settings ya login ka masla hai" keh kar rok deti thi - halanke server, internet aur password sab theek hote thay. Ab app pehle dekhti hai ke server zinda hai ya nahi, aur zinda ho to poora waqt deti hai.
+2) LICENSE STATUS screen par 'Change License' dabane ke baad app ab atak (hang) nahi hoti. Naya license check hote waqt screen par likha aata hai ke check ho raha hai.
 
-3) LICENSE khatam hone se pehle tanbeeh milti hai, aur app chalte chalte bhi license check hota rehta hai - taake kaam ke beech mein achanak band na ho.
-   - Internet band hone par ab "License Error" nahi aata. Agar license pehle se is computer par mehfooz hai to app chalti rehti hai.
+3) License ki muddat baqi ho to app ab adaigi (payment) ke message ki wajah se nahi rukti. License khatam ho jaye to app vendor se raabta karne ka kehti hai.
 
-4) OFFLINE INVOICES - ab kai invoice ek saath server par bheji ja sakti hain. List mein Ctrl ya Shift se kai invoice chunen aur 'Save to Server' dabayen: har invoice bari bari khulegi, aap Save dabate jayen, agli khud aa jayegi. Pehle har bill ke baad list dobara kholni parti thi.
-   - Kisi invoice ko chhorna ho to Close ka button us waqt 'Skip' ban jata hai.
-   - Server band ho to 'Save to Server' band rehta hai, taake bekaar koshish na ho.
-
-5) SERVER CONFIGURATION screen ki durustgi:
-   - 'Test Connection' theek chalte server par bhi fail ho jata tha (Connection Timeout wala message). Ab nahi hota.
-   - Server ka naam ghalat ho to foran bata deta hai, ek minute intezar nahi karwata.
-   - Jis password mein semicolon ya quote ka nishan ho, wo ab theek kaam karta hai.
-
-6) Sale screen par 'View Sales Record' ka button theek jagah aur theek naap ka ho gaya, aur us par naam bhi aata hai.
-
-Update Date: 23-09-2026
+Update Date: 24-09-2026
