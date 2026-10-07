@@ -1,12 +1,9 @@
 Is update mein kya naya hai:
 
-1) ITEM SEARCH (F1) mein item ka naam ab zyada jagah par poora nazar aata hai. Baqi columns thore patle kar diye gaye hain taake cashier ko lamba naam kata hua na mile.
-   - 'Article No' ka column ab shuru mein band hota hai, kyun ke aksar dukanon mein ye khali rehta tha.
-   - Agar aap article number rakhte hain to Shop Information > Sale mein 'Item search mein Article No column dikhayen' par tick laga den. Ye Items Record screen par bhi lagu hota hai.
-   - Article number se search pehle ki tarah kaam karti hai, column band ho tab bhi.
+1) PURCHASE INVOICE save karte waqt, agar item ka rate ya discount Item Info mein update hone wala ho to ab ek tasdeeq (confirmation) screen aati hai jisme purana aur naya rate/discount dono nazar aate hain. Aap chahen to is update ko is invoice ke liye band bhi kar sakte hain.
 
-2) LICENSE STATUS screen par 'Change License' dabane ke baad app ab atak (hang) nahi hoti. Naya license check hote waqt screen par likha aata hai ke check ho raha hai.
+2) PURCHASE aur SALES Report mein ek naya option "Discount Only" / "Only Discounted Rows" shamil kiya gaya hai, jisse sirf wohi rows nazar aati hain jin par discount diya gaya ho.
 
-3) License ki muddat baqi ho to app ab adaigi (payment) ke message ki wajah se nahi rukti. License khatam ho jaye to app vendor se raabta karne ka kehti hai.
+3) Workshop Job Card aur Vehicle Management screens mein kayi behtariyan ki gayi hain.
 
-Update Date: 24-09-2026
+Update Date: 07-10-2026
