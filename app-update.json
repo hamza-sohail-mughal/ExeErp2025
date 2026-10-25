@@ -1,18 +1,30 @@
 ﻿{
-    "latestVersion":  "1.6.2.0",
+    "latestVersion":  "1.7.0.0",
     "downloadUrl":  "https://raw.githubusercontent.com/hamza-sohail-mughal/ExeErp2025/main/Erp%202026-AnyCPU_Debug-SetupFiles/Erp%202026.msi",
-    "updatedAt":  "2026-10-07",
+    "updatedAt":  "2026-10-25",
     "releaseNotesLines":  [
                               "Is update mein kya naya hai:",
                               "",
-                              "1) PURCHASE INVOICE save karte waqt, agar item ka rate ya discount Item Info mein update hone wala ho to ab ek tasdeeq (confirmation) screen aati hai jisme purana aur naya rate/discount dono nazar aate hain. Aap chahen to is update ko is invoice ke liye band bhi kar sakte hain.",
+                              "1) Cash Accounts: ab Petty Cash jaise kai cash account ban sakte hain. Har user ka apna cash account ShopInfo mein set hota hai, aur sale, purchase, receipt, payment mein wohi use hota hai. CashBook ka naam ab \"Main Cash\" hai.",
                               "",
-                              "2) PURCHASE aur SALES Report mein ek naya option \"Discount Only\" / \"Only Discounted Rows\" shamil kiya gaya hai, jisse sirf wohi rows nazar aati hain jin par discount diya gaya ho.",
+                              "2) Day Close aur Cash + Bank Report mein cash account ke hisaab se filter aur \"Cash Register\" ke hisaab se grouping.",
                               "",
-                              "3) Workshop Job Card aur Vehicle Management screens mein kayi behtariyan ki gayi hain.",
+                              "3) Duplicate accounts ko merge karne ki facility (sirf Admin, authenticator code ke saath). Merge se pehle dono ka ledger aur merge ke baad ka ledger dekha ja sakta hai. Merge hui entries ke aage [M] likha aata hai.",
                               "",
-                              "Update Date: 07-10-2026",
+                              "4) Login par Google Authenticator code (optional). Har user \"My Profile\" se apna phone khud set kar sakta hai, aur Admin Users list ke \"Profile\" button se reset ya band kar sakta hai.",
+                              "",
+                              "5) Employee ko band (deactivate) karne ki facility. Band employee dropdowns mein nazar nahi aata, magar reports mein aata hai.",
+                              "",
+                              "6) View Items Record mein ek \"Action\" button (View, Update, Delete, Show item history). \"Show item history\" se Item Ledger khulta hai jisme PDF bhi nikalta hai, aur wahan se Update/Delete ke liye sale ya purchase record khul jata hai.",
+                              "",
+                              "7) View Sale Record mein sorting aur \"Select all\" ke saath sirf total dekhne ki facility.",
+                              "",
+                              "8) Receipt mein Bank Transaction No. ka box (ShopInfo mein zaroori karne ka option), aur Receipt/Payment ke amount par +/- ka nishan.",
+                              "",
+                              "9) Reports mein Start aur End Date ab default aaj ki hoti hai.",
+                              "",
+                              "Update Date: 25-10-2026",
                               ""
                           ],
-    "releaseNotes":  "Is update mein kya naya hai:\r\n\r\n1) PURCHASE INVOICE save karte waqt, agar item ka rate ya discount Item Info mein update hone wala ho to ab ek tasdeeq (confirmation) screen aati hai jisme purana aur naya rate/discount dono nazar aate hain. Aap chahen to is update ko is invoice ke liye band bhi kar sakte hain.\r\n\r\n2) PURCHASE aur SALES Report mein ek naya option \"Discount Only\" / \"Only Discounted Rows\" shamil kiya gaya hai, jisse sirf wohi rows nazar aati hain jin par discount diya gaya ho.\r\n\r\n3) Workshop Job Card aur Vehicle Management screens mein kayi behtariyan ki gayi hain.\r\n\r\nUpdate Date: 07-10-2026\r\n"
+    "releaseNotes":  "Is update mein kya naya hai:\r\n\r\n1) Cash Accounts: ab Petty Cash jaise kai cash account ban sakte hain. Har user ka apna cash account ShopInfo mein set hota hai, aur sale, purchase, receipt, payment mein wohi use hota hai. CashBook ka naam ab \"Main Cash\" hai.\r\n\r\n2) Day Close aur Cash + Bank Report mein cash account ke hisaab se filter aur \"Cash Register\" ke hisaab se grouping.\r\n\r\n3) Duplicate accounts ko merge karne ki facility (sirf Admin, authenticator code ke saath). Merge se pehle dono ka ledger aur merge ke baad ka ledger dekha ja sakta hai. Merge hui entries ke aage [M] likha aata hai.\r\n\r\n4) Login par Google Authenticator code (optional). Har user \"My Profile\" se apna phone khud set kar sakta hai, aur Admin Users list ke \"Profile\" button se reset ya band kar sakta hai.\r\n\r\n5) Employee ko band (deactivate) karne ki facility. Band employee dropdowns mein nazar nahi aata, magar reports mein aata hai.\r\n\r\n6) View Items Record mein ek \"Action\" button (View, Update, Delete, Show item history). \"Show item history\" se Item Ledger khulta hai jisme PDF bhi nikalta hai, aur wahan se Update/Delete ke liye sale ya purchase record khul jata hai.\r\n\r\n7) View Sale Record mein sorting aur \"Select all\" ke saath sirf total dekhne ki facility.\r\n\r\n8) Receipt mein Bank Transaction No. ka box (ShopInfo mein zaroori karne ka option), aur Receipt/Payment ke amount par +/- ka nishan.\r\n\r\n9) Reports mein Start aur End Date ab default aaj ki hoti hai.\r\n\r\nUpdate Date: 25-10-2026\r\n"
 }
