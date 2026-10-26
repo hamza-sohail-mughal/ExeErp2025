@@ -1,21 +1,13 @@
 Is update mein kya naya hai:
 
-1) Cash Accounts: ab Petty Cash jaise kai cash account ban sakte hain. Har user ka apna cash account ShopInfo mein set hota hai, aur sale, purchase, receipt, payment mein wohi use hota hai. CashBook ka naam ab "Main Cash" hai.
+1) Har user ab sirf apna cash account use kar sakta hai (Sale, Purchase, Receipt, Payment). Kisi aur ka cash account chunne par message aata hai. Admin se sirf poocha jata hai.
 
-2) Day Close aur Cash + Bank Report mein cash account ke hisaab se filter aur "Cash Register" ke hisaab se grouping.
+2) Debit Credit Voucher mein dono taraf "End Balance" nazar aata hai, aur likha hota hai ke Debit aur Credit par kis ko rakhna hai.
 
-3) Duplicate accounts ko merge karne ki facility (sirf Admin, authenticator code ke saath). Merge se pehle dono ka ledger aur merge ke baad ka ledger dekha ja sakta hai. Merge hui entries ke aage [M] likha aata hai.
+3) View Sale Record mein cash sale par ab cash account ka naam nazar aata hai (jaise faizan cash), sirf "Cash" nahi.
 
-4) Login par Google Authenticator code (optional). Har user "My Profile" se apna phone khud set kar sakta hai, aur Admin Users list ke "Profile" button se reset ya band kar sakta hai.
+4) Sale aur Purchase screen par Hold ab tez hai. Item select karte waqt screen rukti nahi.
 
-5) Employee ko band (deactivate) karne ki facility. Band employee dropdowns mein nazar nahi aata, magar reports mein aata hai.
+5) Shop Information ki Sale Screen settings saaf, tarteeb se aur Roman Urdu mein hain.
 
-6) View Items Record mein ek "Action" button (View, Update, Delete, Show item history). "Show item history" se Item Ledger khulta hai jisme PDF bhi nikalta hai, aur wahan se Update/Delete ke liye sale ya purchase record khul jata hai.
-
-7) View Sale Record mein sorting aur "Select all" ke saath sirf total dekhne ki facility.
-
-8) Receipt mein Bank Transaction No. ka box (ShopInfo mein zaroori karne ka option), aur Receipt/Payment ke amount par +/- ka nishan.
-
-9) Reports mein Start aur End Date ab default aaj ki hoti hai.
-
-Update Date: 25-10-2026
+Update Date: 26-10-2026
