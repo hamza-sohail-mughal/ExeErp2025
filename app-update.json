@@ -1,22 +1,25 @@
 ﻿{
-    "latestVersion":  "1.7.1.2",
+    "latestVersion":  "1.7.1.3",
     "downloadUrl":  "https://raw.githubusercontent.com/hamza-sohail-mughal/ExeErp2025/main/Erp%202026-AnyCPU_Debug-SetupFiles/Erp%202026.msi",
-    "updatedAt":  "2026-10-26",
+    "updatedAt":  "2026-10-27",
     "releaseNotesLines":  [
                               "Is update mein kya naya hai:",
                               "",
-                              "1) Har user ab sirf apna cash account use kar sakta hai (Sale, Purchase, Receipt, Payment). Kisi aur ka cash account chunne par message aata hai. Admin se sirf poocha jata hai.",
+                              "1) Cash + Bank report mein ab din ke baqi vouchers bhi dekh sakte hain.",
+                              "   - \"Show Other Vouchers\" tick karein to cash/bank ke neeche wo vouchers aate hain jin mein cash ya bank nahi hua.",
+                              "   - Ye Voucher Type ya Created By ke hisab se group hote hain, aur har voucher ki detail nazar aati hai.",
+                              "   - Debit Credit voucher mein dono party ke naam nazar aate hain.",
                               "",
-                              "2) Debit Credit Voucher mein dono taraf \"End Balance\" nazar aata hai, aur likha hota hai ke Debit aur Credit par kis ko rakhna hai.",
+                              "2) Cash + Bank report khulte hi apka apna cash account aur uske saath wale users select hote hain.",
+                              "   - Select All / Unselect All ka option bhi hai, Excel ki tarah.",
+                              "   - Cashbook mein hamesha sab users ki entries aati hain, taake closing sahi rahe.",
                               "",
-                              "3) View Sale Record mein cash sale par ab cash account ka naam nazar aata hai (jaise faizan cash), sirf \"Cash\" nahi.",
+                              "3) Aik din ki report mein Date column nahi aata, date upar likhi hoti hai. Figures poore rupay mein dikhte hain.",
                               "",
-                              "4) Sale aur Purchase screen par Hold ab tez hai. Item select karte waqt screen rukti nahi.",
+                              "4) Purani ya agli tarikh mein entry karne par ab rok diya jata hai (server ki tarikh ke mutabiq).",
                               "",
-                              "5) Shop Information ki Sale Screen settings saaf, tarteeb se aur Roman Urdu mein hain.",
-                              "",
-                              "Update Date: 26-10-2026",
+                              "Update Date: 27-10-2026",
                               ""
                           ],
-    "releaseNotes":  "Is update mein kya naya hai:\r\n\r\n1) Har user ab sirf apna cash account use kar sakta hai (Sale, Purchase, Receipt, Payment). Kisi aur ka cash account chunne par message aata hai. Admin se sirf poocha jata hai.\r\n\r\n2) Debit Credit Voucher mein dono taraf \"End Balance\" nazar aata hai, aur likha hota hai ke Debit aur Credit par kis ko rakhna hai.\r\n\r\n3) View Sale Record mein cash sale par ab cash account ka naam nazar aata hai (jaise faizan cash), sirf \"Cash\" nahi.\r\n\r\n4) Sale aur Purchase screen par Hold ab tez hai. Item select karte waqt screen rukti nahi.\r\n\r\n5) Shop Information ki Sale Screen settings saaf, tarteeb se aur Roman Urdu mein hain.\r\n\r\nUpdate Date: 26-10-2026\r\n"
+    "releaseNotes":  "Is update mein kya naya hai:\r\n\r\n1) Cash + Bank report mein ab din ke baqi vouchers bhi dekh sakte hain.\r\n   - \"Show Other Vouchers\" tick karein to cash/bank ke neeche wo vouchers aate hain jin mein cash ya bank nahi hua.\r\n   - Ye Voucher Type ya Created By ke hisab se group hote hain, aur har voucher ki detail nazar aati hai.\r\n   - Debit Credit voucher mein dono party ke naam nazar aate hain.\r\n\r\n2) Cash + Bank report khulte hi apka apna cash account aur uske saath wale users select hote hain.\r\n   - Select All / Unselect All ka option bhi hai, Excel ki tarah.\r\n   - Cashbook mein hamesha sab users ki entries aati hain, taake closing sahi rahe.\r\n\r\n3) Aik din ki report mein Date column nahi aata, date upar likhi hoti hai. Figures poore rupay mein dikhte hain.\r\n\r\n4) Purani ya agli tarikh mein entry karne par ab rok diya jata hai (server ki tarikh ke mutabiq).\r\n\r\nUpdate Date: 27-10-2026\r\n"
 }
