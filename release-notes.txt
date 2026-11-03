@@ -1,16 +1,33 @@
-Is update mein kya naya hai:
+﻿Is update mein kya naya hai:
 
-1) Cash + Bank report mein ab din ke baqi vouchers bhi dekh sakte hain.
-   - "Show Other Vouchers" tick karein to cash/bank ke neeche wo vouchers aate hain jin mein cash ya bank nahi hua.
-   - Ye Voucher Type ya Created By ke hisab se group hote hain, aur har voucher ki detail nazar aati hai.
-   - Debit Credit voucher mein dono party ke naam nazar aate hain.
+1) Ab aap faisla kar sakte hain ke kaun bills aur vouchers ko Post ya Unpost kare.
+   - Roles ki Configuration mein Post Any Transactions aur Unpost Transactions ki alag ijazat dein.
+   - Sirf ijazat wale user ko mutaliqa Post ya Unpost option nazar aata hai.
 
-2) Cash + Bank report khulte hi apka apna cash account aur uske saath wale users select hote hain.
-   - Select All / Unselect All ka option bhi hai, Excel ki tarah.
-   - Cashbook mein hamesha sab users ki entries aati hain, taake closing sahi rahe.
+2) Posted sale invoice ab Update ki ijazat hone par bhi edit nahi hota.
+   - Unposted bill apni Update ki ijazat ke mutabiq badal sakte hain.
+   - Posted bill par Action se Unpost Invoice karne ke liye alag ijazat chahiye.
 
-3) Aik din ki report mein Date column nahi aata, date upar likhi hoti hai. Figures poore rupay mein dikhte hain.
+3) Dashboard par Sale Record se posted aur unposted dono bills nazar aate hain.
+   - Post Sales se sirf unposted bills khulte hain aur All Users pehle se select hota hai.
 
-4) Purani ya agli tarikh mein entry karne par ab rok diya jata hai (server ki tarikh ke mutabiq).
+4) Bulk Cash / Bank Receipts mein aik hi party ko kai martaba add kar sakte hain.
+   - Har entry ka amount, tafseel aur Receive In alag rakh sakte hain.
+   - Receive In ke hisab se raqam ka jama aur kul raqam neeche list mein nazar aati hai.
+   - Save se pehle accounts aur raqam ki tasdeeq hoti hai; dropdown ki pareshani bhi door ki gayi hai.
 
-Update Date: 27-10-2026
+5) Salesman Recovery Report mein aik entry wale group ka fazool subtotal ab nahi aata.
+   - Kai entries wale group ka subtotal aur aakhri total nazar aata hai.
+
+6) Cash + Bank report mein accounts badalne par pehle se ki hui selection mehfooz rehti hai.
+   - Khaas users select karke unki entries ki report bhi dekh sakte hain.
+
+7) Ghair zaroori bank, supplier, expense aur doosre accounts ko inactive ya dobara active kar sakte hain.
+   - Nayi entries ki list mein sirf active accounts aate hain.
+
+8) Cash / Bank receipt aur payment mein account dhoondhne ka search option diya gaya hai.
+
+9) Admin ijazat de to user pichhli ya agli tarikh mein entry kar sakta hai.
+   - Baghair ijazat wala user aaj ki tarikh par kaam karta hai.
+
+Update Date: 03-11-2026
