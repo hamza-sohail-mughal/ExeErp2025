@@ -10,6 +10,7 @@
 
 3) Dashboard par Sale Record se posted aur unposted dono bills nazar aate hain.
    - Post Sales se sirf unposted bills khulte hain aur All Users pehle se select hota hai.
+   - Kai unposted bills tick karke Post Selected Invoices se aik saath post kar sakte hain; Unpost aik bill ka hi hota hai.
 
 4) Bulk Cash / Bank Receipts mein aik hi party ko kai martaba add kar sakte hain.
    - Har entry ka amount, tafseel aur Receive In alag rakh sakte hain.
