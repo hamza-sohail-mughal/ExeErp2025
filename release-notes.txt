@@ -1,12 +1,3 @@
 Yeh update install kar lein.
 
-Is update mein kya naya hai:
-
-1) Accounts jaldi jaldi select karne par naam aur phone ghalat ya khaali aane ka masla door kiya gaya hai.
-   - Bulk Cash / Bank Receipts, Payments, Opening Voucher aur Salary ki lists mein har selection ka apna data mehfooz rehta hai.
-
-2) Cash + Bank Report mein ab posted aur unposted dono entries shamil hoti hain.
-   - Opening balance, entries aur running balance dono tarah ki entries se bante hain.
-   - Show other vouchers ke hisse mein bhi unposted vouchers nazar aate hain.
-
 Update Date: 06-11-2026
