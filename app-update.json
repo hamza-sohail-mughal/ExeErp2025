@@ -1,0 +1,14 @@
+﻿{
+    "latestVersion":  "1.8.6.0",
+    "downloadUrl":  "https://raw.githubusercontent.com/hamza-sohail-mughal/ExeErp2025/main/Erp%202026-AnyCPU_Debug-SetupFiles/Erp%202026.msi",
+    "updatedAt":  "2026-11-24",
+    "releaseNotesLines":  [
+                              "Sale invoice printing aur settings management ko behtar banaya gaya hai.",
+                              "",
+                              "A4/A5 ke liye Classic aur Compact formats, inline logo, item-name font size, live preview zoom aur separate header repeat controls add kiye gaye hain.",
+                              "Sale screen settings ab database mein save hoti hain aur invoice format/migration errors fix kiye gaye hain.",
+                              "",
+                              "Update Date: 24-11-2026"
+                          ],
+    "releaseNotes":  "Sale invoice printing aur settings management ko behtar banaya gaya hai.\r\n\r\nA4/A5 ke liye Classic aur Compact formats, inline logo, item-name font size, live preview zoom aur separate header repeat controls add kiye gaye hain.\r\nSale screen settings ab database mein save hoti hain aur invoice format/migration errors fix kiye gaye hain.\r\n\r\nUpdate Date: 24-11-2026"
+}

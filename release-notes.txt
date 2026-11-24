@@ -1,0 +1,11 @@
+Sale invoice printing aur settings management ko behtar banaya gaya hai.
+
+- A4 aur A5 invoices ke liye Classic aur Compact format selector add kiya gaya hai.
+- Compact header paper space bachata hai aur shop, invoice aur customer information ko clear layout mein dikhata hai.
+- Shop logo ab compact format mein shop name ke saath left side par inline show hota hai.
+- Item-name font size, live preview zoom aur header repeat controls add kiye gaye hain.
+- Shop/Invoice aur Bill To sections ko har page par separately repeat karne ki facility di gayi hai.
+- Sale screen ki user settings database mein move ki gayi hain taa-ke software update ke baad settings reset na hon.
+- Invoice format saving, database migrations aur template defaults ke errors fix kiye gaye hain.
+
+Update Date: 24-11-2026
