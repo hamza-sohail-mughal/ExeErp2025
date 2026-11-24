@@ -1,14 +1,24 @@
 ﻿{
-    "latestVersion":  "1.8.6.0",
+    "latestVersion":  "1.8.6.1",
     "downloadUrl":  "https://raw.githubusercontent.com/hamza-sohail-mughal/ExeErp2025/main/Erp%202026-AnyCPU_Debug-SetupFiles/Erp%202026.msi",
     "updatedAt":  "2026-11-24",
     "releaseNotesLines":  [
-                              "Sale invoice printing aur settings management ko behtar banaya gaya hai.",
+                              "Bank receipt voucher aur master accounts management ko behtar banaya gaya hai:",
                               "",
-                              "A4/A5 ke liye Classic aur Compact formats, inline logo, item-name font size, live preview zoom aur separate header repeat controls add kiye gaye hain.",
-                              "Sale screen settings ab database mein save hoti hain aur invoice format/migration errors fix kiye gaye hain.",
+                              "- Bank receipt voucher par Transaction No. ab direct ledger ke Particular mein merge hota hai taa-ke customer aur bank dono ledgers / printouts mein transaction number show ho.",
+                              "- Bank receipt voucher update aur save par duplicate transaction number ki validation aur clean reload handling add ki gayi hai.",
+                              "- Master accounts (Banks, Suppliers, Other Accounts, Expenses) mein Active/Inactive status support aur transactions dropdowns mein sirf active accounts ki display behtar ki gayi hai.",
+                              "",
+                              "Pichli Update (1.8.6.0):",
+                              "- A4 aur A5 invoices ke liye Classic aur Compact format selector add kiya gaya hai.",
+                              "- Compact header paper space bachata hai aur shop, invoice aur customer information ko clear layout mein dikhata hai.",
+                              "- Shop logo ab compact format mein shop name ke saath left side par inline show hota hai.",
+                              "- Item-name font size, live preview zoom aur header repeat controls add kiye gaye hain.",
+                              "- Shop/Invoice aur Bill To sections ko har page par separately repeat karne ki facility di gayi hai.",
+                              "- Sale screen ki user settings database mein move ki gayi hain taa-ke software update ke baad settings reset na hon.",
+                              "- Invoice format saving, database migrations aur template defaults ke errors fix kiye gaye hain.",
                               "",
                               "Update Date: 24-11-2026"
                           ],
-    "releaseNotes":  "Sale invoice printing aur settings management ko behtar banaya gaya hai.\r\n\r\nA4/A5 ke liye Classic aur Compact formats, inline logo, item-name font size, live preview zoom aur separate header repeat controls add kiye gaye hain.\r\nSale screen settings ab database mein save hoti hain aur invoice format/migration errors fix kiye gaye hain.\r\n\r\nUpdate Date: 24-11-2026"
+    "releaseNotes":  "Bank receipt voucher aur master accounts management ko behtar banaya gaya hai:\r\n\r\n- Bank receipt voucher par Transaction No. ab direct ledger ke Particular mein merge hota hai taa-ke customer aur bank dono ledgers / printouts mein transaction number show ho.\r\n- Bank receipt voucher update aur save par duplicate transaction number ki validation aur clean reload handling add ki gayi hai.\r\n- Master accounts (Banks, Suppliers, Other Accounts, Expenses) mein Active/Inactive status support aur transactions dropdowns mein sirf active accounts ki display behtar ki gayi hai.\r\n\r\nPichli Update (1.8.6.0):\r\n- A4 aur A5 invoices ke liye Classic aur Compact format selector add kiya gaya hai.\r\n- Compact header paper space bachata hai aur shop, invoice aur customer information ko clear layout mein dikhata hai.\r\n- Shop logo ab compact format mein shop name ke saath left side par inline show hota hai.\r\n- Item-name font size, live preview zoom aur header repeat controls add kiye gaye hain.\r\n- Shop/Invoice aur Bill To sections ko har page par separately repeat karne ki facility di gayi hai.\r\n- Sale screen ki user settings database mein move ki gayi hain taa-ke software update ke baad settings reset na hon.\r\n- Invoice format saving, database migrations aur template defaults ke errors fix kiye gaye hain.\r\n\r\nUpdate Date: 24-11-2026"
 }

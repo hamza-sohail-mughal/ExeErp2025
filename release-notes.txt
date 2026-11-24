@@ -1,5 +1,10 @@
-Sale invoice printing aur settings management ko behtar banaya gaya hai.
+Bank receipt voucher aur master accounts management ko behtar banaya gaya hai:
 
+- Bank receipt voucher par Transaction No. ab direct ledger ke Particular mein merge hota hai taa-ke customer aur bank dono ledgers / printouts mein transaction number show ho.
+- Bank receipt voucher update aur save par duplicate transaction number ki validation aur clean reload handling add ki gayi hai.
+- Master accounts (Banks, Suppliers, Other Accounts, Expenses) mein Active/Inactive status support aur transactions dropdowns mein sirf active accounts ki display behtar ki gayi hai.
+
+Pichli Update (1.8.6.0):
 - A4 aur A5 invoices ke liye Classic aur Compact format selector add kiya gaya hai.
 - Compact header paper space bachata hai aur shop, invoice aur customer information ko clear layout mein dikhata hai.
 - Shop logo ab compact format mein shop name ke saath left side par inline show hota hai.
